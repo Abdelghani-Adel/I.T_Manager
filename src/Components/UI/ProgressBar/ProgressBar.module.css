@@ -1,0 +1,9 @@
+.wrapper {
+  margin: 1% 0 5%;
+}
+
+.title,
+.number {
+  margin: 0;
+  margin-bottom: 5px;
+}

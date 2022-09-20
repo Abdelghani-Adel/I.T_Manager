@@ -1,0 +1,13 @@
+.wrapper {
+  padding: 1em 0.5em 0.5em;
+  border: 1px solid #e5e6e7;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 9%);
+  cursor: pointer;
+}
+.wrapper:hover {
+  transform: scale(1.03);
+  box-shadow: 0 16px 20px rgb(0 0 0 / 6%);
+  border-color: #d3d4d6;
+  cursor: pointer;
+}

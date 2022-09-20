@@ -31,7 +31,7 @@ const ROUTES = [
         path: "/tickets",
         key: "tickets-page",
         exact: true,
-        component: () => <h1>Tickets Page</h1>,
+        component: () => <Redirect to="/tickets/dashboard" />,
       },
     ],
   },
