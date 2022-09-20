@@ -1,5 +1,7 @@
+import AppWrapper from "./Components/UI/Wrapper/AppWrapper";
+
 function App() {
-  return <div className="App"></div>;
+  return <AppWrapper></AppWrapper>;
 }
 
 export default App;
