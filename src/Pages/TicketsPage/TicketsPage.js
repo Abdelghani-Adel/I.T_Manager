@@ -6,7 +6,7 @@ const TicketsPage = (props) => {
     <div className="row">
       <h2 className="my-2">Tickets</h2>
       <div className="actions my-2">
-        <button className="btn btn-primary" role="button">
+        <button className="btn btn-success" role="button">
           New Ticket
         </button>
       </div>

@@ -1,6 +1,6 @@
 const TicketsTableRow = (props) => {
   return (
-    <tr id={props.ticket.id}>
+    <tr id={props.ticket.id} className="cursor--pointer">
       <th scope="row">{props.index + 1}</th>
       <td>{props.ticket.subject}</td>
       <td>{props.ticket.user}</td>

@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import TicketsTable from "../../../../Components/TicketsTable/TicketsTable";
+import TicketsTable from "../../components/TicketsTable/TicketsTable";
 
 const LatestTickets = (props) => {
   const ticketsState = useSelector((state) => state.tickets);
@@ -7,7 +7,7 @@ const LatestTickets = (props) => {
 
   return (
     <div className={props.className}>
-      <div className="p-2 wrapper">
+      <div className="p-2 wrapper wrapper--primary">
         <h3 className="text-secondary">Latest Tickets</h3>
 
         <TicketsTable tickets={tickets} />

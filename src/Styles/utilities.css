@@ -1,6 +1,6 @@
 /* WRAPPERS */
 .wrapper {
-  border: 1px solid #0d6efd;
+  border: 1px solid transparent;
   border-radius: 5px;
 }
 .wrapper--primary {
