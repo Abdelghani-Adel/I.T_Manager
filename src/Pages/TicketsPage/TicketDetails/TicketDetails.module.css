@@ -1,0 +1,29 @@
+.container {
+  background-color: #5a5b5c;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+button {
+  padding: 0 10px;
+
+  color: #5a5b5c;
+  background: none;
+  border: none;
+
+  font-weight: bold;
+}
+
+button + button {
+  border-left: 1px solid rgb(185, 185, 185);
+  margin-left: 5px;
+}
+
+button:hover {
+  color: black;
+}
+
+.avatar {
+  margin: auto;
+  width: 60%;
+}
