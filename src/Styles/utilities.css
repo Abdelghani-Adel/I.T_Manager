@@ -1,0 +1,48 @@
+/* WRAPPERS */
+.wrapper {
+  border: 1px solid #0d6efd;
+  border-radius: 5px;
+}
+.wrapper--primary {
+  border-color: #0d6efd;
+}
+.wrapper--secondary {
+  border-color: #6c757d;
+}
+.wrapper--sucess {
+  border-color: #198754;
+}
+.wrapper--info {
+  border-color: #0dcaf0;
+}
+.wrapper--warning {
+  border-color: #ffc107;
+}
+.wrapper--danger {
+  border-color: #dc3545;
+}
+.wrapper--light {
+  border-color: #f8f9fa;
+}
+.wrapper--dark {
+  border-color: #212529;
+}
+.wrapper-shadow--1 {
+  box-shadow: 0 4px 12px rgb(0 0 0 / 9%);
+}
+
+/* CURSOR */
+.cursor--pointer {
+  cursor: pointer;
+}
+
+/* HOVER */
+.hover-scale--1:hover {
+  transform: scale(1.02);
+}
+.hover-scale--2:hover {
+  transform: scale(1.04);
+}
+.hover-scale--3:hover {
+  transform: scale(1.06);
+}
