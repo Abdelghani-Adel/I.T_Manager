@@ -21,7 +21,7 @@ const initialTickets = [
     user: "Hazem",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
-    status: "opened",
+    status: "pending",
     priority: "low",
     assignedTo: "Ali",
   },
@@ -45,7 +45,7 @@ const initialTickets = [
     user: "Hamza",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
-    status: "pending",
+    status: "opened",
     priority: "low",
     assignedTo: "Mahmoud",
   },
@@ -69,7 +69,7 @@ const initialTickets = [
     user: "Hossam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
-    status: "unassigned",
+    status: "opened",
     priority: "low",
     assignedTo: "Mohamed",
   },
@@ -81,7 +81,7 @@ const initialTickets = [
     user: "Hossam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
-    status: "hold",
+    status: "pending",
     priority: "low",
     assignedTo: "Mohamed",
   },
@@ -93,7 +93,7 @@ const initialTickets = [
     user: "Hossam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
-    status: "hold",
+    status: "pending",
     priority: "low",
     assignedTo: "Mohamed",
   },
@@ -105,7 +105,7 @@ const initialTickets = [
     user: "Hossam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
-    status: "hold",
+    status: "overdue",
     priority: "low",
     assignedTo: "Mohamed",
   },
@@ -117,7 +117,7 @@ const initialTickets = [
     user: "Hossam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
-    status: "hold",
+    status: "overdue",
     priority: "low",
     assignedTo: "Mohamed",
   },
@@ -129,7 +129,7 @@ const initialTickets = [
     user: "Hossam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
-    status: "hold",
+    status: "pending",
     priority: "low",
     assignedTo: "Mohamed",
   },
@@ -141,7 +141,7 @@ const initialTickets = [
     user: "Hossam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
-    status: "hold",
+    status: "opened",
     priority: "low",
     assignedTo: "Mohamed",
   },
@@ -151,7 +151,7 @@ const initialTickets = [
     user: "Hossam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
-    status: "hold",
+    status: "pending",
     priority: "low",
     assignedTo: "Mohamed",
   },
