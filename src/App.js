@@ -7,9 +7,9 @@ import ROUTES from "./Routes/Routes";
 function App() {
   return (
     <AppWrapper>
-      <Sidebar />
+      <Sidebar className="col-2" />
       <div className="col-10">
-        <MainHeader />
+        <MainHeader className="row" />
         <RenderRoutes routes={ROUTES} />
       </div>
     </AppWrapper>

@@ -1,5 +1,7 @@
 import MyTickets from "./TicketsDashboard/MyTickets/MyTickets";
+import TicketsDashboard from "./TicketsDashboard/TicketsDahboard";
 import TicketsSummary from "./TicketsDashboard/TicketsSummary/TicketsSummary";
+import TicketsPageRoutes from "./TicketsRoutes";
 
 const TicketsPage = (props) => {
   return (
@@ -10,9 +12,7 @@ const TicketsPage = (props) => {
           New Ticket
         </button>
       </div>
-
-      <TicketsSummary className="col-12 my-2" />
-      <MyTickets className="col-4" />
+      <TicketsPageRoutes routes={props.routes} />
     </div>
   );
 };

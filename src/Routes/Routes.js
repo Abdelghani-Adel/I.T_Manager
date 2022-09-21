@@ -1,4 +1,5 @@
 import { Redirect } from "react-router-dom";
+import TicketsDashboard from "../Pages/TicketsPage/TicketsDashboard/TicketsDahboard";
 import TicketsPage from "../Pages/TicketsPage/TicketsPage";
 
 const ROUTES = [
@@ -32,6 +33,12 @@ const ROUTES = [
         key: "tickets-page",
         exact: true,
         component: () => <Redirect to="/tickets/dashboard" />,
+      },
+      {
+        path: "/tickets/dashboard",
+        key: "tickets-dashboard",
+        exact: true,
+        component: (props) => <TicketsDashboard {...props} />,
       },
     ],
   },

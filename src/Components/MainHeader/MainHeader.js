@@ -5,7 +5,7 @@ const MainHeader = (props) => {
   const searchHandler = () => {};
   return (
     <div
-      className={`row bg-dark text-whtie align-items-center ${classes.mainHeader}`}
+      className={`${props.className} ${classes.mainHeader} bg-dark text-whtie align-items-center`}
     >
       <div className="col-3">
         <SearchInput size="sm" color="primary" onClick={searchHandler} />
