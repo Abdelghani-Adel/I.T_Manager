@@ -1,8 +1,9 @@
 import { useSelector, useDispatch } from "react-redux";
-
+import { useRef, useState } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { ticketActions } from "../../../Redux/ticketsSlice";
 import classes from "./TicketDetails.module.css";
+import { ticketChatActions } from "../../../Redux/ticketChatSlice";
 
 const TicketDetails = (props) => {
   const dispatch = useDispatch();
@@ -13,12 +14,26 @@ const TicketDetails = (props) => {
   const ticketChat = useSelector((state) => state.ticketChat);
   const chatObj = ticketChat.find((chat) => chat.id == params.id);
 
+  const commentRef = useRef();
+
   const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
   const ticketDate = new Date(ticket.date);
   const curDate = new Date();
   const ticketAge = Math.round(Math.abs((ticketDate - curDate) / oneDay));
 
   const addNotehandler = () => {};
+
+  const addCommentHandler = () => {
+    const commentData = commentRef.current.value;
+    const commentObj = {
+      author: "user2",
+      comment: commentData,
+    };
+    dispatch(
+      ticketChatActions.addComment({ id: params.id, comment: commentObj })
+    );
+    commentRef.current.value = "";
+  };
 
   const assignHandler = () => {
     const action = {
@@ -76,23 +91,30 @@ const TicketDetails = (props) => {
 
       <div className="row bg-white p-2">
         <h3 className="text-center fw-bold">Discussion</h3>
-        {chatObj.chat.map((chat) => (
-          <div
-            key={Math.random()}
-            className="d-flex justify-content-between bg-light border align-items-center mb-2 cursor--pointer"
-          >
-            <p>{chat.comment}</p>
-            <p>{chat.author}</p>
-          </div>
-        ))}
+        {chatObj &&
+          chatObj.chat.map((chat) => (
+            <div
+              key={Math.random()}
+              className="d-flex justify-content-between bg-light border align-items-center mb-2 cursor--pointer"
+            >
+              <p>{chat.comment}</p>
+              <p>{chat.author}</p>
+            </div>
+          ))}
 
-        <div class="input-group mb-3">
+        <div className="input-group mb-3">
           <input
             type="text"
-            class="form-control"
+            ref={commentRef}
+            className="form-control"
             placeholder="Write a comment"
           />
-          <button class="btn btn-success" type="button" id="button-addon2">
+          <button
+            className="btn btn-success"
+            type="button"
+            id="button-addon2"
+            onClick={addCommentHandler}
+          >
             comment
           </button>
         </div>
