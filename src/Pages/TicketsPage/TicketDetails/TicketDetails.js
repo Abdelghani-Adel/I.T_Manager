@@ -10,11 +10,15 @@ const TicketDetails = (props) => {
   const history = useHistory();
   const ticketsState = useSelector((state) => state.tickets);
   const ticket = ticketsState.find((ticket) => ticket.id == params.id);
+  const ticketChat = useSelector((state) => state.ticketChat);
+  const chatObj = ticketChat.find((chat) => chat.id == params.id);
 
   const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
   const ticketDate = new Date(ticket.date);
   const curDate = new Date();
   const ticketAge = Math.round(Math.abs((ticketDate - curDate) / oneDay));
+
+  const addNotehandler = () => {};
 
   const assignHandler = () => {
     const action = {
@@ -51,13 +55,7 @@ const TicketDetails = (props) => {
 
       <div className="row bg-white p-2 mb-2">
         <div className="col">
-          <button>
-            <i className="bi bi-reply me-2"> Reply</i>
-          </button>
-          <button>
-            <i className="bi bi-forward me-2"> Forward</i>
-          </button>
-          <button>
+          <button onClick={addNotehandler}>
             <i className="bi bi-sticky me-2"> Add Note</i>
           </button>
           <button onClick={assignHandler}>
@@ -69,11 +67,35 @@ const TicketDetails = (props) => {
         </div>
       </div>
 
-      <div className="row bg-white p-2">
+      <div className="row bg-white p-2 mb-2">
         <p>
           <strong>Description: </strong>
           {ticket.description}
         </p>
+      </div>
+
+      <div className="row bg-white p-2">
+        <h3 className="text-center fw-bold">Discussion</h3>
+        {chatObj.chat.map((chat) => (
+          <div
+            key={Math.random()}
+            className="d-flex justify-content-between bg-light border align-items-center mb-2 cursor--pointer"
+          >
+            <p>{chat.comment}</p>
+            <p>{chat.author}</p>
+          </div>
+        ))}
+
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Write a comment"
+          />
+          <button class="btn btn-success" type="button" id="button-addon2">
+            comment
+          </button>
+        </div>
       </div>
     </div>
   );

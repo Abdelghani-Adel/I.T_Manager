@@ -177,9 +177,7 @@ const ticketsSlice = createSlice({
   reducers: {
     addTicket: () => {},
     editTicket: (state, action) => {
-      const objIndex = current(state).findIndex(
-        (obj) => obj.id == action.payload.id
-      );
+      const objIndex = state.findIndex((obj) => obj.id == action.payload.id);
 
       state[objIndex] = action.payload;
     },
