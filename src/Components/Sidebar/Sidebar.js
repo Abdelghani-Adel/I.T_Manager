@@ -1,11 +1,11 @@
-import Logo from "./Logo/Logo";
-import SideNav from "./SideNav/SideNav";
+import Logo from "../Logo/Logo";
+import NavBar from "./NavBar/NavBar";
 
 const Sidebar = (props) => {
   return (
-    <div className={`${props.className} bg-dark text-white`}>
+    <div className={`${props.className} side-bar bg-dark text-white`}>
       <Logo />
-      <SideNav />
+      <NavBar />
     </div>
   );
 };
