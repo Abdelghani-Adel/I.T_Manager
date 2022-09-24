@@ -1,0 +1,22 @@
+.link {
+  --color: #e9ecef;
+  --activeColor: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--color);
+  box-sizing: border-box;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  letter-spacing: 1px;
+}
+
+.link:hover {
+  color: var(--activeColor);
+}
+
+.activeLink {
+  color: var(--activeColor);
+  font-weight: bold;
+  border-bottom: 2px solid var(--activeColor);
+  border-radius: 3px;
+}

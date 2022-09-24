@@ -7,6 +7,11 @@ const TicketDetails = (props) => {
   const ticketsState = useSelector((state) => state.tickets);
   const ticket = ticketsState.find((ticket) => ticket.id == params.id);
 
+  const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+  const ticketDate = new Date(ticket.date);
+  const curDate = new Date();
+  const ticketAge = Math.round(Math.abs((ticketDate - curDate) / oneDay));
+
   return (
     <div className={`${classes.container} col-10 m-auto p-4`}>
       <div className="row bg-white mb-2">
@@ -16,7 +21,8 @@ const TicketDetails = (props) => {
         <div className="col-11">
           <p className="fw-bold fs-4 mb-0">{ticket.subject}</p>
           <p className="mb-0 text-muted">
-            Reported on {ticket.date} at {ticket.time}
+            Reported on {ticket.date} at {ticket.time}{" "}
+            <span className="fw-bold">({ticketAge} days ago)</span>
           </p>
           <p className="text-muted">Assigned to : {ticket.assignedTo}</p>
         </div>
