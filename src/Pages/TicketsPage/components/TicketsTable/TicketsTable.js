@@ -6,11 +6,15 @@ const TicketsTable = (props) => {
       <thead className="table-secondary">
         <tr>
           <th scope="col">#</th>
-          <th scope="col">Subject</th>
+          <th scope="col" className="d-none d-lg-table-cell">
+            Subject
+          </th>
           <th scope="col">User</th>
           <th scope="col">Status</th>
           <th scope="col">Priority</th>
-          <th scope="col">Assigned to</th>
+          <th scope="col" className="d-none">
+            Assigned to
+          </th>
         </tr>
       </thead>
 

@@ -14,27 +14,27 @@ const TicketsSummary = (props) => {
 
   return (
     <div className={props.className}>
-      <div className="row">
+      <div className="row row-cols-1 row-cols-md-4">
         <TicketsSummaryCard
-          className="col-2"
+          className="mb-3 mb-md-0"
           title="Pending Tickets"
           tickets={pending}
           path="pending"
         />
         <TicketsSummaryCard
-          className="col-2"
+          className="mb-3 mb-md-0"
           title="Opened Tickets"
           tickets={opened}
           path="opened"
         />
         <TicketsSummaryCard
-          className="col-2"
+          className="mb-3 mb-md-0"
           title="Overdue Tickets"
           tickets={overdue}
           path="overdue"
         />
         <TicketsSummaryCard
-          className="col-2"
+          className="mb-3 mb-md-0"
           title="Escalations"
           tickets={[]}
           path="escalations"

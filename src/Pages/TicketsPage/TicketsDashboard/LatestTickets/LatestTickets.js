@@ -6,7 +6,7 @@ const LatestTickets = (props) => {
   const tickets = ticketsState.filter((ticket, index) => index < 5);
 
   return (
-    <div className={props.className}>
+    <div className="col-lg-7">
       <div className="p-2 wrapper wrapper--primary">
         <h3 className="text-secondary">Latest Tickets</h3>
 

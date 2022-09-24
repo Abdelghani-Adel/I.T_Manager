@@ -5,7 +5,7 @@ const MyTickets = (props) => {
   const quantity = 7;
   const width = (2 / 3) * 100;
   return (
-    <div className={props.className}>
+    <div className="col-lg-5 mb-3 mb-xl-0">
       <div className={`${classes.wrapper} p-2 wrapper wrapper--primary`}>
         <div className="d-flex justify-content-between">
           <h3 className="text-secondary">My opened tickets</h3>

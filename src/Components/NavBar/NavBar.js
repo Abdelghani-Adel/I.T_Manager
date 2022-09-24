@@ -1,10 +1,11 @@
-import Logo from "../../Logo/Logo";
+import Logo from "../Logo/Logo";
 import NavBarItem from "./NavBarItem";
+import classes from "./NavBar.module.css";
 
 const NavBar = (props) => {
   return (
     <nav
-      className={`${props.className} navbar navbar-dark bg-dark align-items-start`}
+      className={`${props.className} ${classes.navbar} navbar navbar-dark bg-dark align-content-start`}
     >
       <Logo />
       <ul className="navbar-nav flex-row flex-lg-column w-100 justify-content-around">
