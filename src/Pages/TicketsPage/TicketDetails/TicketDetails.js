@@ -1,9 +1,13 @@
-import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+
+import { useParams, useHistory } from "react-router-dom";
+import { ticketActions } from "../../../Redux/ticketsSlice";
 import classes from "./TicketDetails.module.css";
 
 const TicketDetails = (props) => {
+  const dispatch = useDispatch();
   const params = useParams();
+  const history = useHistory();
   const ticketsState = useSelector((state) => state.tickets);
   const ticket = ticketsState.find((ticket) => ticket.id == params.id);
 
@@ -11,6 +15,23 @@ const TicketDetails = (props) => {
   const ticketDate = new Date(ticket.date);
   const curDate = new Date();
   const ticketAge = Math.round(Math.abs((ticketDate - curDate) / oneDay));
+
+  const assignHandler = () => {
+    const action = {
+      ...ticket,
+      assignedTo: "test",
+    };
+    dispatch(ticketActions.editTicket(action));
+  };
+
+  const closeHandler = () => {
+    const action = {
+      ...ticket,
+      status: "closed",
+    };
+    dispatch(ticketActions.editTicket(action));
+    history.goBack();
+  };
 
   return (
     <div className={`${classes.container} col-10 m-auto p-4`}>
@@ -28,24 +49,31 @@ const TicketDetails = (props) => {
         </div>
       </div>
 
-      <div className="row bg-white p-2">
+      <div className="row bg-white p-2 mb-2">
         <div className="col">
           <button>
-            <i className="bi bi-reply me-2">Reply</i>
+            <i className="bi bi-reply me-2"> Reply</i>
           </button>
           <button>
-            <i className="bi bi-forward me-2">Forward</i>
+            <i className="bi bi-forward me-2"> Forward</i>
           </button>
           <button>
-            <i className="bi bi-sticky me-2">Add Note</i>
+            <i className="bi bi-sticky me-2"> Add Note</i>
           </button>
-          <button>
-            <i className="bi bi-chat me-2">Discuss</i>
+          <button onClick={assignHandler}>
+            <i className="bi bi-chat me-2"> Assign to</i>
           </button>
-          <button>
-            <i className="bi bi-x-square me-2">Close ticket</i>
+          <button onClick={closeHandler}>
+            <i className="bi bi-x-square me-2"> Mark as closed</i>
           </button>
         </div>
+      </div>
+
+      <div className="row bg-white p-2">
+        <p>
+          <strong>Description: </strong>
+          {ticket.description}
+        </p>
       </div>
     </div>
   );

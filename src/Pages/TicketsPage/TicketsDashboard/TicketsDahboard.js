@@ -7,7 +7,7 @@ const TicketsDashboard = (props) => {
   return (
     <Fragment>
       {/* Direct parent is TicketsPage with 'row' class */}
-      <TicketsSummary className="col-12 my-2" />
+      <TicketsSummary className="col-12" />
       <MyTickets className="col-4 p-2" />
       <LatestTickets className="col-8 p-2" />
     </Fragment>

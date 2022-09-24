@@ -1,11 +1,13 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, current } from "@reduxjs/toolkit";
 
-const initialTickets = [
+const initialState = [
   {
     id: 1,
     time: "02:13 PM",
     date: "02/26/2022",
     subject: "I can't access my business email",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Eslam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -18,6 +20,8 @@ const initialTickets = [
     time: "02:13 PM",
     date: "06/06/2022",
     subject: "I can't print from the new system!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Hazem",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -30,6 +34,8 @@ const initialTickets = [
     time: "02:13 PM",
     date: "08/26/2022",
     subject: "I forgot my system login password",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Ahmed",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -42,6 +48,8 @@ const initialTickets = [
     time: "02:13 PM",
     date: "02/13/2022",
     subject: "My mouse is not functioning well!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Hamza",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -54,6 +62,8 @@ const initialTickets = [
     time: "02:13 PM",
     date: "08/20/2022",
     subject: "How to print to the printer in the HR room",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Hossam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -66,6 +76,8 @@ const initialTickets = [
     time: "02:13 PM",
     date: "12/30/2021",
     subject: "How to print to the printer in the HR room",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Hossam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -78,6 +90,8 @@ const initialTickets = [
     time: "02:13 PM",
     date: "02/18/2022",
     subject: "How to print to the printer in the HR room",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Hossam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -90,6 +104,8 @@ const initialTickets = [
     time: "02:13 PM",
     date: "07/23/2022",
     subject: "How to print to the printer in the HR room",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Hossam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -102,6 +118,8 @@ const initialTickets = [
     time: "02:13 PM",
     date: "05/18/2022",
     subject: "How to print to the printer in the HR room",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Hossam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -114,6 +132,8 @@ const initialTickets = [
     time: "02:13 PM",
     date: "09/13/2022",
     subject: "How to print to the printer in the HR room",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Hossam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -126,6 +146,8 @@ const initialTickets = [
     time: "02:13 PM",
     date: "01/30/2022",
     subject: "How to print to the printer in the HR room",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Hossam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -138,6 +160,8 @@ const initialTickets = [
     time: "02:13 PM",
     date: "03/30/2022",
     subject: "How to print to the printer in the HR room",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Hossam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -149,10 +173,16 @@ const initialTickets = [
 
 const ticketsSlice = createSlice({
   name: "ticketsSlice",
-  initialState: initialTickets,
+  initialState,
   reducers: {
     addTicket: () => {},
-    editTicket: (state, payload) => {},
+    editTicket: (state, action) => {
+      const objIndex = current(state).findIndex(
+        (obj) => obj.id == action.payload.id
+      );
+
+      state[objIndex] = action.payload;
+    },
   },
 });
 
