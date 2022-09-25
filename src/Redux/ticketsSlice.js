@@ -14,6 +14,32 @@ const initialState = [
     status: "pending",
     priority: "Medium",
     assignedTo: "Abdelghani",
+    chat: [
+      {
+        time: "02:13 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 1",
+      },
+      {
+        time: "02:15 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 2",
+      },
+      {
+        time: "02:19 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 3",
+      },
+    ],
   },
   {
     id: 2,
@@ -28,6 +54,7 @@ const initialState = [
     status: "pending",
     priority: "low",
     assignedTo: "Ali",
+    chat: [],
   },
   {
     id: 3,
@@ -42,6 +69,32 @@ const initialState = [
     status: "opened",
     priority: "Medium",
     assignedTo: "Saleh",
+    chat: [
+      {
+        time: "02:13 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 1",
+      },
+      {
+        time: "02:15 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 2",
+      },
+      {
+        time: "02:19 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 3",
+      },
+    ],
   },
   {
     id: 4,
@@ -56,6 +109,32 @@ const initialState = [
     status: "opened",
     priority: "low",
     assignedTo: "Mahmoud",
+    chat: [
+      {
+        time: "02:13 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 1",
+      },
+      {
+        time: "02:15 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 2",
+      },
+      {
+        time: "02:19 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 3",
+      },
+    ],
   },
   {
     id: 5,
@@ -70,6 +149,32 @@ const initialState = [
     status: "pending",
     priority: "low",
     assignedTo: "Mohamed",
+    chat: [
+      {
+        time: "02:13 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 1",
+      },
+      {
+        time: "02:15 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 2",
+      },
+      {
+        time: "02:19 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 3",
+      },
+    ],
   },
   {
     id: 6,
@@ -84,6 +189,32 @@ const initialState = [
     status: "opened",
     priority: "low",
     assignedTo: "Mohamed",
+    chat: [
+      {
+        time: "02:13 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 1",
+      },
+      {
+        time: "02:15 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 2",
+      },
+      {
+        time: "02:19 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 3",
+      },
+    ],
   },
   {
     id: 7,
@@ -98,6 +229,32 @@ const initialState = [
     status: "pending",
     priority: "low",
     assignedTo: "Mohamed",
+    chat: [
+      {
+        time: "02:13 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 1",
+      },
+      {
+        time: "02:15 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 2",
+      },
+      {
+        time: "02:19 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 3",
+      },
+    ],
   },
   {
     id: 8,
@@ -112,6 +269,32 @@ const initialState = [
     status: "pending",
     priority: "low",
     assignedTo: "Mohamed",
+    chat: [
+      {
+        time: "02:13 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 1",
+      },
+      {
+        time: "02:15 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 2",
+      },
+      {
+        time: "02:19 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 3",
+      },
+    ],
   },
   {
     id: 9,
@@ -126,6 +309,32 @@ const initialState = [
     status: "overdue",
     priority: "low",
     assignedTo: "Mohamed",
+    chat: [
+      {
+        time: "02:13 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 1",
+      },
+      {
+        time: "02:15 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 2",
+      },
+      {
+        time: "02:19 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 3",
+      },
+    ],
   },
   {
     id: 10,
@@ -140,6 +349,32 @@ const initialState = [
     status: "overdue",
     priority: "low",
     assignedTo: "Mohamed",
+    chat: [
+      {
+        time: "02:13 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 1",
+      },
+      {
+        time: "02:15 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 2",
+      },
+      {
+        time: "02:19 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 3",
+      },
+    ],
   },
   {
     id: 11,
@@ -154,6 +389,32 @@ const initialState = [
     status: "pending",
     priority: "low",
     assignedTo: "Mohamed",
+    chat: [
+      {
+        time: "02:13 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 1",
+      },
+      {
+        time: "02:15 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 2",
+      },
+      {
+        time: "02:19 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 3",
+      },
+    ],
   },
   {
     id: 12,
@@ -168,6 +429,32 @@ const initialState = [
     status: "opened",
     priority: "low",
     assignedTo: "Mohamed",
+    chat: [
+      {
+        time: "02:13 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 1",
+      },
+      {
+        time: "02:15 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 2",
+      },
+      {
+        time: "02:19 PM",
+        date: "02/26/2022",
+        author: "User",
+        avatar:
+          "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+        comment: "This is a comment 3",
+      },
+    ],
   },
 ];
 
@@ -180,6 +467,10 @@ const ticketsSlice = createSlice({
       const objIndex = state.findIndex((obj) => obj.id == action.payload.id);
 
       state[objIndex] = action.payload;
+    },
+    addComment: (state, action) => {
+      const objIndex = state.findIndex((obj) => obj.id == action.payload.id);
+      state[objIndex].chat.push(action.payload.comment);
     },
   },
 });
