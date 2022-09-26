@@ -15,9 +15,19 @@ const TicketClose = (props) => {
     history.goBack();
   };
 
+  let btnClass = "";
+  let btnTitle = "";
+  if (props.ticket.status == "solved") {
+    btnClass = "success disabled";
+    btnTitle = "Ticket is solved";
+  } else {
+    btnClass = "secondary";
+    btnTitle = "Mark as solved";
+  }
+
   return (
-    <button onClick={closeHandler}>
-      <i className="bi bi-x-square me-2"> Mark as solved</i>
+    <button onClick={closeHandler} className={`btn btn-${btnClass}`}>
+      <i className="bi bi-check-square me-2"> {btnTitle}</i>
     </button>
   );
 };

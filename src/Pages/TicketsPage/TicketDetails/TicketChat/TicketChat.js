@@ -19,6 +19,12 @@ const TicketChat = (props) => {
     commentRef.current.value = "";
   };
 
+  const enterHandler = (e) => {
+    if (e.key === "Enter") {
+      addCommentHandler();
+    }
+  };
+
   return (
     <div className="rounded bg-white p-2">
       <h3 className="text-center fw-bold">Discussion</h3>
@@ -34,6 +40,7 @@ const TicketChat = (props) => {
           ref={commentRef}
           className="form-control"
           placeholder="Write a comment"
+          onKeyDown={enterHandler}
         />
         <button
           className="btn btn-success"
