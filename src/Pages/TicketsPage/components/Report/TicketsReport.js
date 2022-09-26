@@ -7,15 +7,23 @@ const TicketsReport = (props) => {
   let filteredTickets = ticketsState;
   const params = useParams();
 
-  filteredTickets = filteredTickets.filter(
-    (ticket) => ticket.status === params.status
-  );
-  filteredTickets = filteredTickets.filter(
-    (ticket) => ticket.priority === params.priority
-  );
-  filteredTickets = filteredTickets.filter(
-    (ticket) => ticket.user === params.user
-  );
+  if (params.status !== "All") {
+    filteredTickets = filteredTickets.filter(
+      (ticket) => ticket.status === params.status
+    );
+  }
+
+  if (params.priority !== "All") {
+    filteredTickets = filteredTickets.filter(
+      (ticket) => ticket.priority === params.priority
+    );
+  }
+
+  if (params.user !== "All") {
+    filteredTickets = filteredTickets.filter(
+      (ticket) => ticket.user === params.user
+    );
+  }
 
   return (
     <div>

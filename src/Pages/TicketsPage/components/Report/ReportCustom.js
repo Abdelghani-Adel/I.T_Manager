@@ -3,9 +3,9 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 
 const ReportCustom = (props) => {
-  const [userInput, setUserInput] = useState("");
-  const [statusInput, setStatusInput] = useState("");
-  const [priorityInput, setPriorityInput] = useState("");
+  const [userInput, setUserInput] = useState("All");
+  const [statusInput, setStatusInput] = useState("All");
+  const [priorityInput, setPriorityInput] = useState("All");
 
   const userChangeHandler = (e) => {
     setUserInput(e.target.value);
@@ -28,9 +28,11 @@ const ReportCustom = (props) => {
             className="form-select"
             id="inputGroupSelect01"
             onChange={userChangeHandler}
-            defaultValue={"All"}
+            defaultValue={"All Users"}
           >
-            <option disabled>Choose User</option>
+            <option value="All Users" disabled>
+              All Users
+            </option>
             <option>Eslam</option>
             <option>Hamza</option>
             <option>Hossam</option>
@@ -41,9 +43,11 @@ const ReportCustom = (props) => {
             className="form-select"
             id="inputGroupSelect01"
             onChange={statusChangeHandler}
-            defaultValue={"All"}
+            defaultValue={"Any Status"}
           >
-            <option disabled>Choose Status</option>
+            <option value="Any Status" disabled>
+              Any Status
+            </option>
             <option>pending</option>
             <option>opened</option>
             <option>solved</option>
@@ -54,9 +58,11 @@ const ReportCustom = (props) => {
             className="form-select"
             id="inputGroupSelect01"
             onChange={priorityChangeHandler}
-            defaultValue={"All"}
+            defaultValue={"Any Priority"}
           >
-            <option disabled>Choose Priority</option>
+            <option value="Any Priority" disabled>
+              Any Priority
+            </option>
             <option>High</option>
             <option>Medium</option>
             <option>Low</option>
