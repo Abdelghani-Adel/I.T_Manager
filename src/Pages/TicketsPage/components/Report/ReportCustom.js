@@ -3,19 +3,28 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 
 const ReportCustom = (props) => {
-  const [userInput, setUserInput] = useState("All");
+  const [path, setPath] = useState("/tickets/report?");
   const [statusInput, setStatusInput] = useState("All");
   const [priorityInput, setPriorityInput] = useState("All");
 
+  // let path = `user=${userInput}&status=${statusInput}&priority=${priorityInput}`;
+  // let path = "/tickets/report?user=1";
+
   const userChangeHandler = (e) => {
-    setUserInput(e.target.value);
+    setPath((previousState) => previousState.concat(`&user=${e.target.value}`));
   };
   const statusChangeHandler = (e) => {
-    setStatusInput(e.target.value);
+    setPath((previousState) =>
+      previousState.concat(`&status=${e.target.value}`)
+    );
   };
   const priorityChangeHandler = (e) => {
-    setPriorityInput(e.target.value);
+    setPath((previousState) =>
+      previousState.concat(`&priority=${e.target.value}`)
+    );
   };
+
+  // let path = `${userInput}/${statusInput}/${priorityInput}`;
 
   return (
     <div className="modal-overlay w-25 ">
@@ -70,7 +79,7 @@ const ReportCustom = (props) => {
         </div>
 
         <Link
-          to={`/tickets/report/${userInput}/${statusInput}/${priorityInput}`}
+          to={path}
           className="btn btn-success"
           onClick={props.onClosePortal}
         >

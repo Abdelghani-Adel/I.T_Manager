@@ -48,6 +48,12 @@ const ROUTES = [
     component: (props) => <TicketsPage {...props} />,
     routes: [
       {
+        path: "/tickets/report",
+        key: "tickets-report",
+        exact: true,
+        component: (props) => <TicketsReport {...props} />,
+      },
+      {
         path: "/tickets",
         key: "tickets-page",
         exact: true,
@@ -70,12 +76,6 @@ const ROUTES = [
         key: "ticket-details",
         exact: true,
         component: (props) => <TicketDetails {...props} />,
-      },
-      {
-        path: "/tickets/report/:user/:status/:priority",
-        key: "tickets-report",
-        exact: false,
-        component: (props) => <TicketsReport {...props} />,
       },
     ],
   },

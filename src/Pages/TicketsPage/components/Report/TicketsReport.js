@@ -1,27 +1,31 @@
 import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 import TicketsTable from "../TicketsTable/TicketsTable";
 
 const TicketsReport = (props) => {
+  const location = useLocation();
+
   const ticketsState = useSelector((state) => state.tickets);
   let filteredTickets = ticketsState;
-  const params = useParams();
+  const params = new URLSearchParams(location.search);
 
-  if (params.status !== "All") {
+  const user = params.get("user");
+  const status = params.get("status");
+  const priority = params.get("priority");
+
+  if (user !== "All" && user) {
+    filteredTickets = filteredTickets.filter((ticket) => ticket.user === user);
+  }
+
+  if (status !== "All" && status) {
     filteredTickets = filteredTickets.filter(
-      (ticket) => ticket.status === params.status
+      (ticket) => ticket.status === status
     );
   }
 
-  if (params.priority !== "All") {
+  if (priority !== "All" && priority) {
     filteredTickets = filteredTickets.filter(
-      (ticket) => ticket.priority === params.priority
-    );
-  }
-
-  if (params.user !== "All") {
-    filteredTickets = filteredTickets.filter(
-      (ticket) => ticket.user === params.user
+      (ticket) => ticket.priority === priority
     );
   }
 
