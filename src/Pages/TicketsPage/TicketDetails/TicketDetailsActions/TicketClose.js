@@ -9,7 +9,7 @@ const TicketClose = (props) => {
   const closeHandler = () => {
     const action = {
       ...props.ticket,
-      status: "closed",
+      status: "solved",
     };
     dispatch(ticketActions.editTicket(action));
     history.goBack();
@@ -17,7 +17,7 @@ const TicketClose = (props) => {
 
   return (
     <button onClick={closeHandler}>
-      <i className="bi bi-x-square me-2"> Mark as closed</i>
+      <i className="bi bi-x-square me-2"> Mark as solved</i>
     </button>
   );
 };

@@ -11,10 +11,13 @@ const TicketsSummary = (props) => {
   const overdue = useSelector((state) =>
     state.tickets.filter((ticket) => ticket.status === "overdue")
   );
+  const solved = useSelector((state) =>
+    state.tickets.filter((ticket) => ticket.status === "solved")
+  );
 
   return (
     <div className={props.className}>
-      <div className="row g-2 row-cols-1 row-cols-md-4">
+      <div className="row g-2 row-cols-1 row-cols-md-5">
         <TicketsSummaryCard
           title="Pending Tickets"
           tickets={pending}
@@ -29,6 +32,11 @@ const TicketsSummary = (props) => {
           title="Overdue Tickets"
           tickets={overdue}
           path="overdue"
+        />
+        <TicketsSummaryCard
+          title="Solved this month"
+          tickets={solved}
+          path="solved"
         />
         <TicketsSummaryCard
           title="Escalations"

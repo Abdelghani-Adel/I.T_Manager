@@ -51,8 +51,8 @@ const initialState = [
     user: "Hazem",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
-    status: "pending",
-    priority: "low",
+    status: "opened",
+    priority: "Low",
     assignedTo: "Ali",
     chat: [],
   },
@@ -66,8 +66,8 @@ const initialState = [
     user: "Ahmed",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
-    status: "opened",
-    priority: "Medium",
+    status: "overdue",
+    priority: "High",
     assignedTo: "Saleh",
     chat: [
       {
@@ -106,8 +106,8 @@ const initialState = [
     user: "Hamza",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
-    status: "opened",
-    priority: "low",
+    status: "solved",
+    priority: "Low",
     assignedTo: "Mahmoud",
     chat: [
       {
@@ -147,7 +147,7 @@ const initialState = [
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
     status: "pending",
-    priority: "low",
+    priority: "Low",
     assignedTo: "Mohamed",
     chat: [
       {
@@ -187,7 +187,7 @@ const initialState = [
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
     status: "opened",
-    priority: "low",
+    priority: "Low",
     assignedTo: "Mohamed",
     chat: [
       {
@@ -227,7 +227,7 @@ const initialState = [
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
     status: "pending",
-    priority: "low",
+    priority: "Low",
     assignedTo: "Mohamed",
     chat: [
       {
@@ -267,7 +267,7 @@ const initialState = [
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
     status: "pending",
-    priority: "low",
+    priority: "Low",
     assignedTo: "Mohamed",
     chat: [
       {
@@ -307,7 +307,7 @@ const initialState = [
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
     status: "overdue",
-    priority: "low",
+    priority: "Low",
     assignedTo: "Mohamed",
     chat: [
       {
@@ -347,7 +347,7 @@ const initialState = [
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
     status: "overdue",
-    priority: "low",
+    priority: "Low",
     assignedTo: "Mohamed",
     chat: [
       {
@@ -387,7 +387,7 @@ const initialState = [
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
     status: "pending",
-    priority: "low",
+    priority: "Low",
     assignedTo: "Mohamed",
     chat: [
       {
@@ -427,7 +427,7 @@ const initialState = [
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
     status: "opened",
-    priority: "low",
+    priority: "Low",
     assignedTo: "Mohamed",
     chat: [
       {
