@@ -1,5 +1,6 @@
 import { Redirect } from "react-router-dom";
 import DashboardPage from "../Pages/DashboardPage/DashboardPage";
+import TicketsReport from "../Pages/TicketsPage/components/Report/TicketsReport";
 import TicketDetails from "../Pages/TicketsPage/TicketDetails/TicketDetails";
 import TicketsByStatus from "../Pages/TicketsPage/TicketsByStatus/TicketsByStatus";
 import TicketsDashboard from "../Pages/TicketsPage/TicketsDashboard/TicketsDahboard";
@@ -69,6 +70,12 @@ const ROUTES = [
         key: "ticket-details",
         exact: true,
         component: (props) => <TicketDetails {...props} />,
+      },
+      {
+        path: "/tickets/report/:user/:status/:priority",
+        key: "tickets-report",
+        exact: false,
+        component: (props) => <TicketsReport {...props} />,
       },
     ],
   },
