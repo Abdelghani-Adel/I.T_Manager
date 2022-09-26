@@ -1,14 +1,8 @@
 import { useState } from "react";
-import { useRef } from "react";
 import { Link } from "react-router-dom";
 
 const ReportCustom = (props) => {
   const [path, setPath] = useState("/tickets/report?");
-  const [statusInput, setStatusInput] = useState("All");
-  const [priorityInput, setPriorityInput] = useState("All");
-
-  // let path = `user=${userInput}&status=${statusInput}&priority=${priorityInput}`;
-  // let path = "/tickets/report?user=1";
 
   const userChangeHandler = (e) => {
     setPath((previousState) => previousState.concat(`&user=${e.target.value}`));
@@ -23,8 +17,6 @@ const ReportCustom = (props) => {
       previousState.concat(`&priority=${e.target.value}`)
     );
   };
-
-  // let path = `${userInput}/${statusInput}/${priorityInput}`;
 
   return (
     <div className="modal-overlay w-25 ">
