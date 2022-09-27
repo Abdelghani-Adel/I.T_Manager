@@ -17,7 +17,7 @@ const TicketClose = (props) => {
 
   let btnClass = "";
   let btnTitle = "";
-  if (props.ticket.status == "solved") {
+  if (props.ticket.status === "solved") {
     btnClass = "success disabled";
     btnTitle = "Ticket is solved";
   } else {

@@ -1,30 +1,18 @@
-import { useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useHistory, useParams } from "react-router-dom";
-import { ticketActions } from "../../../Redux/ticketsSlice";
+import { useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
+import TicketChat from "./TicketChat/TicketChat";
 import classes from "./TicketDetails.module.css";
 import TicketDetailsActions from "./TicketDetailsActions/TicketDetailsActions";
-import TicketChat from "./TicketChat/TicketChat";
 
 const TicketDetails = (props) => {
-  const dispatch = useDispatch();
   const params = useParams();
-  const history = useHistory();
   const ticketsState = useSelector((state) => state.tickets);
-  const ticket = ticketsState.find((ticket) => ticket.id == params.id);
+  const ticket = ticketsState.find((ticket) => ticket.id === params.id);
 
   const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
   const ticketDate = new Date(ticket.date);
   const curDate = new Date();
   const ticketAge = Math.round(Math.abs((ticketDate - curDate) / oneDay));
-
-  const assignHandler = () => {
-    const action = {
-      ...ticket,
-      assignedTo: "test",
-    };
-    dispatch(ticketActions.editTicket(action));
-  };
 
   return (
     <div className={`col-10 col-xl-8 m-auto p-2 mb-2 bg-secondary rounded`}>

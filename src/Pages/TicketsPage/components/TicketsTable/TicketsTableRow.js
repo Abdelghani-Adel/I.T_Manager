@@ -7,27 +7,27 @@ const TicketsTableRow = (props) => {
   };
 
   let statusClass = "";
-  if (props.ticket.status == "pending") {
+  if (props.ticket.status === "pending") {
     statusClass = "bg-warning text-white";
   }
-  if (props.ticket.status == "opened") {
+  if (props.ticket.status === "opened") {
     statusClass = "bg-primary text-white";
   }
-  if (props.ticket.status == "overdue") {
+  if (props.ticket.status === "overdue") {
     statusClass = "bg-danger text-white";
   }
-  if (props.ticket.status == "solved") {
+  if (props.ticket.status === "solved") {
     statusClass = "bg-success text-white";
   }
 
   let priorityClass = "";
-  if (props.ticket.priority == "High") {
+  if (props.ticket.priority === "High") {
     priorityClass = "bg-danger text-white";
   }
-  if (props.ticket.priority == "Medium") {
+  if (props.ticket.priority === "Medium") {
     priorityClass = "bg-warning text-white";
   }
-  if (props.ticket.priority == "Low") {
+  if (props.ticket.priority === "Low") {
     priorityClass = "bg-primary text-white";
   }
 

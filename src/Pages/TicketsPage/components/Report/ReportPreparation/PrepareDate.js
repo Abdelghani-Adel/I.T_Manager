@@ -1,45 +1,21 @@
-import classes from "./PrepareDate.module.css";
+import { useState } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const PrepareDate = (props) => {
+  const [dateRange, setDateRange] = useState([null, null]);
+  const [startDate, endDate] = dateRange;
   return (
-    <form autocomplete="off">
-      <div className="flex-row d-flex justify-content-center">
-        <div className="col-lg-6 col-11 px-1">
-          <div className="input-group input-daterange">
-            <input
-              type="text"
-              id="start"
-              className={`form-control text-left mr-2 ${classes.input} ${classes.formControl}`}
-            />
-            <label
-              className={`ml-3 ${classes.formControlPlaceholder} ${classes.startp}`}
-              id="start-p"
-            >
-              Start Date
-            </label>
-            <span
-              className={`bi bi-calender ${classes.icon} ${classes.bi1}`}
-              id="bi-1"
-            ></span>
-            <input
-              type="text"
-              id="end"
-              className={`form-control text-left mr-2 ${classes.input} ${classes.formControl}`}
-            />
-            <label
-              className={`ml-3 ${classes.formControlPlaceholder} ${classes.endp}`}
-              id="end-p"
-            >
-              End Date
-            </label>
-            <span
-              className={`bi bi-calender ${classes.icon} ${classes.bi2}`}
-              id="bi-2"
-            ></span>
-          </div>
-        </div>
-      </div>
-    </form>
+    <DatePicker
+      className="border rounded mb-3 w-100 p-1"
+      selectsRange={true}
+      startDate={startDate}
+      endDate={endDate}
+      dateFormat="dd/MM/yyyy"
+      onChange={(update) => setDateRange(update)}
+      placeholderText="Select a date range"
+      isClearable={false}
+    />
   );
 };
 

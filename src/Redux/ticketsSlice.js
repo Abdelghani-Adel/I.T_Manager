@@ -1,4 +1,4 @@
-import { createSlice, current } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = [
   {
@@ -464,12 +464,12 @@ const ticketsSlice = createSlice({
   reducers: {
     addTicket: () => {},
     editTicket: (state, action) => {
-      const objIndex = state.findIndex((obj) => obj.id == action.payload.id);
+      const objIndex = state.findIndex((obj) => obj.id === action.payload.id);
 
       state[objIndex] = action.payload;
     },
     addComment: (state, action) => {
-      const objIndex = state.findIndex((obj) => obj.id == action.payload.id);
+      const objIndex = state.findIndex((obj) => obj.id === action.payload.id);
       state[objIndex].chat.push(action.payload.comment);
     },
   },

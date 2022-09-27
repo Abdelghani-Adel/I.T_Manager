@@ -22,12 +22,9 @@ const TicketsPage = (props) => {
       )}
       <h2 className="mb-2 fs-sm-1 fs-md-6">Tickets</h2>
       <div className="actions mb-2">
-        <button className="btn btn-success" role="button">
-          New Ticket
-        </button>
+        <button className="btn btn-success">New Ticket</button>
         <button
           className="btn btn-info border border-primary fw-bold"
-          role="button"
           onClick={showPortal}
         >
           Tickets Report

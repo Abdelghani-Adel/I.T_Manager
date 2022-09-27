@@ -1,11 +1,6 @@
-import { useDispatch } from "react-redux";
-import { useHistory } from "react-router-dom";
 import TicketClose from "./TicketClose";
 
 const TicketDetailsActions = (props) => {
-  const dispatch = useDispatch();
-  const history = useHistory();
-
   const addNotehandler = () => {};
 
   const assignHandler = () => {};

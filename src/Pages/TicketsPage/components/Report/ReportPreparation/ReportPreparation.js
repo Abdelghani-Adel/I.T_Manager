@@ -12,30 +12,16 @@ const ReportPreparation = (props) => {
     setPath((previousState) => previousState.concat(input));
   };
 
-  const userChangeHandler = (input) => {
-    setPath((previousState) => previousState.concat(`&user=${input}`));
-  };
-  const statusChangeHandler = (e) => {
-    setPath((previousState) =>
-      previousState.concat(`&status=${e.target.value}`)
-    );
-  };
-  const priorityChangeHandler = (e) => {
-    setPath((previousState) =>
-      previousState.concat(`&priority=${e.target.value}`)
-    );
-  };
-
   return (
     <div className="modal-overlay w-25 ">
       <div className="bg-white p-2 rounded">
         <h3 className="mb-3 text-center text-secondary">
           Customize your report
         </h3>
+        <PrepareDate onChange={onChangeHandler} />
         <PrepareUser onChange={onChangeHandler} />
         <PrepareStatus onChange={onChangeHandler} />
         <PreparePriority onChange={onChangeHandler} />
-        <PrepareDate onChange={onChangeHandler} />
 
         <Link
           to={path}
