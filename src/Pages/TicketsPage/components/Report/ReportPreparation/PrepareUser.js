@@ -1,7 +1,13 @@
+import { useSelector } from "react-redux";
+
 const PrepareUser = (props) => {
+  const users = useSelector((state) => state.users);
+  console.log(users);
+
   const onChangeHandler = (e) => {
     props.onChange(`&user=${e.target.value}`);
   };
+
   return (
     <div className="input-group mb-3">
       <select
@@ -12,9 +18,10 @@ const PrepareUser = (props) => {
         <option value="All Users" disabled>
           All Users
         </option>
-        <option>Eslam</option>
-        <option>Hamza</option>
-        <option>Hossam</option>
+
+        {users.map((user) => (
+          <option>{user.firstName}</option>
+        ))}
       </select>
     </div>
   );
