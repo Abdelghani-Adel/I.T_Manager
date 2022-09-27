@@ -8,6 +8,7 @@ const PrepareDate = (props) => {
   return (
     <DatePicker
       className="border rounded mb-3 w-100 p-1"
+      todayButton="Today"
       selectsRange={true}
       startDate={startDate}
       endDate={endDate}

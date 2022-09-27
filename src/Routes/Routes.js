@@ -5,6 +5,7 @@ import TicketDetails from "../Pages/TicketsPage/TicketDetails/TicketDetails";
 import TicketsFilterStatus from "../Pages/TicketsPage/TicketsFilter/TicketsFilterStatus";
 import TicketsDashboard from "../Pages/TicketsPage/TicketsDashboard/TicketsDahboard";
 import TicketsPage from "../Pages/TicketsPage/TicketsPage";
+import NewTicket from "../Pages/TicketsPage/NewTicket/NewTicket";
 
 const ROUTES = [
   {
@@ -52,6 +53,12 @@ const ROUTES = [
         key: "tickets-report",
         exact: true,
         component: (props) => <TicketsReport {...props} />,
+      },
+      {
+        path: "/tickets/add",
+        key: "add-ticket",
+        exact: true,
+        component: (props) => <NewTicket {...props} />,
       },
       {
         path: "/tickets",

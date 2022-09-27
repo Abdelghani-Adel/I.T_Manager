@@ -7,7 +7,7 @@ import TicketDetailsActions from "./TicketDetailsActions/TicketDetailsActions";
 const TicketDetails = (props) => {
   const params = useParams();
   const ticketsState = useSelector((state) => state.tickets);
-  const ticket = ticketsState.find((ticket) => ticket.id === params.id);
+  const ticket = ticketsState.find((ticket) => ticket.id == params.id);
 
   const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
   const ticketDate = new Date(ticket.date);
@@ -15,7 +15,7 @@ const TicketDetails = (props) => {
   const ticketAge = Math.round(Math.abs((ticketDate - curDate) / oneDay));
 
   return (
-    <div className={`col-10 col-xl-8 m-auto p-2 mb-2 bg-secondary rounded`}>
+    <div className="col-10 col-xl-8 m-auto p-2 mb-2 bg-secondary rounded">
       <div className="d-flex rounded p-2 bg-white mb-2 ">
         <div className="w-25">
           <img src={`${ticket.avatar}`} alt="" className={classes.avatar} />

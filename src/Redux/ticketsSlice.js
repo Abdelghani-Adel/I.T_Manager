@@ -6,6 +6,7 @@ const initialState = [
     time: "02:13 PM",
     date: "02/26/2022",
     subject: "I can't access my business email",
+    departement: "Accounting",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Eslam",
@@ -46,6 +47,7 @@ const initialState = [
     time: "02:13 PM",
     date: "06/06/2022",
     subject: "I can't print from the new system!",
+    departement: "Accounting",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Hazem",
@@ -61,6 +63,7 @@ const initialState = [
     time: "02:13 PM",
     date: "08/26/2022",
     subject: "I forgot my system login password",
+    departement: "Accounting",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Ahmed",
@@ -101,6 +104,7 @@ const initialState = [
     time: "02:13 PM",
     date: "02/13/2022",
     subject: "My mouse is not functioning well!",
+    departement: "Accounting",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Hamza",
@@ -141,6 +145,7 @@ const initialState = [
     time: "02:13 PM",
     date: "08/20/2022",
     subject: "How to print to the printer in the HR room",
+    departement: "Accounting",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Hamza",
@@ -181,6 +186,7 @@ const initialState = [
     time: "02:13 PM",
     date: "12/30/2021",
     subject: "How to print to the printer in the HR room",
+    departement: "Accounting",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Eslam",
@@ -221,6 +227,7 @@ const initialState = [
     time: "02:13 PM",
     date: "02/18/2022",
     subject: "How to print to the printer in the HR room",
+    departement: "Accounting",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Eslam",
@@ -261,6 +268,7 @@ const initialState = [
     time: "02:13 PM",
     date: "07/23/2022",
     subject: "How to print to the printer in the HR room",
+    departement: "Accounting",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Hamza",
@@ -301,6 +309,7 @@ const initialState = [
     time: "02:13 PM",
     date: "05/18/2022",
     subject: "How to print to the printer in the HR room",
+    departement: "Accounting",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Hamza",
@@ -341,6 +350,7 @@ const initialState = [
     time: "02:13 PM",
     date: "09/13/2022",
     subject: "How to print to the printer in the HR room",
+    departement: "Accounting",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Hossam",
@@ -381,6 +391,7 @@ const initialState = [
     time: "02:13 PM",
     date: "01/30/2022",
     subject: "How to print to the printer in the HR room",
+    departement: "Accounting",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Hossam",
@@ -421,6 +432,7 @@ const initialState = [
     time: "02:13 PM",
     date: "03/30/2022",
     subject: "How to print to the printer in the HR room",
+    departement: "Accounting",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
     user: "Hossam",
