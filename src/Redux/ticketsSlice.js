@@ -18,7 +18,7 @@ const initialState = [
       {
         time: "02:13 PM",
         date: "02/26/2022",
-        author: "User",
+        author: "Eslam",
         avatar:
           "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
         comment: "This is a comment 1",
@@ -26,7 +26,7 @@ const initialState = [
       {
         time: "02:15 PM",
         date: "02/26/2022",
-        author: "User",
+        author: "Abdelghani Adel",
         avatar:
           "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
         comment: "This is a comment 2",
@@ -34,7 +34,7 @@ const initialState = [
       {
         time: "02:19 PM",
         date: "02/26/2022",
-        author: "User",
+        author: "Eslam",
         avatar:
           "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
         comment: "This is a comment 3",
@@ -143,7 +143,7 @@ const initialState = [
     subject: "How to print to the printer in the HR room",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
-    user: "Hossam",
+    user: "Hamza",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
     status: "pending",
@@ -183,11 +183,11 @@ const initialState = [
     subject: "How to print to the printer in the HR room",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
-    user: "Hossam",
+    user: "Eslam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
     status: "opened",
-    priority: "Low",
+    priority: "High",
     assignedTo: "Mohamed",
     chat: [
       {
@@ -223,11 +223,11 @@ const initialState = [
     subject: "How to print to the printer in the HR room",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
-    user: "Hossam",
+    user: "Eslam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
     status: "pending",
-    priority: "Low",
+    priority: "High",
     assignedTo: "Mohamed",
     chat: [
       {
@@ -263,11 +263,11 @@ const initialState = [
     subject: "How to print to the printer in the HR room",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
-    user: "Hossam",
+    user: "Hamza",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
     status: "pending",
-    priority: "Low",
+    priority: "High",
     assignedTo: "Mohamed",
     chat: [
       {
@@ -303,11 +303,11 @@ const initialState = [
     subject: "How to print to the printer in the HR room",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia dolorum at odit fugit. Quas repellendus exercitationem, soluta in modi iusto? Dignissimos, exercitationem? Eos consequuntur, esse maiores ex commodi fuga? Unde perspiciatis tempore odio voluptas accusamus, nam excepturi officiis nesciunt praesentium autem recusandae rerum dignissimos aut, eos, ratione rem perferendis.",
-    user: "Hossam",
+    user: "Hamza",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
     status: "overdue",
-    priority: "Low",
+    priority: "Medium",
     assignedTo: "Mohamed",
     chat: [
       {
@@ -347,7 +347,7 @@ const initialState = [
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
     status: "overdue",
-    priority: "Low",
+    priority: "Medium",
     assignedTo: "Mohamed",
     chat: [
       {
@@ -386,8 +386,8 @@ const initialState = [
     user: "Hossam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
-    status: "pending",
-    priority: "Low",
+    status: "opened",
+    priority: "High",
     assignedTo: "Mohamed",
     chat: [
       {
@@ -426,8 +426,8 @@ const initialState = [
     user: "Hossam",
     avatar:
       "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
-    status: "opened",
-    priority: "Low",
+    status: "overdue",
+    priority: "Medium",
     assignedTo: "Mohamed",
     chat: [
       {
