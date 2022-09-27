@@ -2,7 +2,6 @@ import { useSelector } from "react-redux";
 
 const PrepareUser = (props) => {
   const users = useSelector((state) => state.users);
-  console.log(users);
 
   const onChangeHandler = (e) => {
     props.onChange(`&user=${e.target.value}`);
