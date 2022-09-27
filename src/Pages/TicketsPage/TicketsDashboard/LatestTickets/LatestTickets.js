@@ -3,6 +3,7 @@ import TicketsTable from "../../components/TicketsTable/TicketsTable";
 
 const LatestTickets = (props) => {
   const ticketsState = useSelector((state) => state.tickets);
+  console.log(ticketsState);
   const tickets = ticketsState.filter((ticket, index) => index < 5);
 
   return (

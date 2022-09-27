@@ -1,39 +1,59 @@
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { useHistory } from "react-router-dom";
 import TicketIcon from "../../../Assets/Images/ticketicon.png";
 import { ticketActions } from "../../../Redux/ticketsSlice";
+import DepartementInput from "./DepartementInput";
 
 const NewTicket = (props) => {
   const dispatch = useDispatch();
-  const [ticketObject, setTicketObject] = useState();
+  const history = useHistory();
 
+  const [ticketObject, setTicketObject] = useState({
+    id: "",
+    user: "",
+    date: "",
+    subject: "",
+    departement: "",
+    description: "",
+    avatar:
+      "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
+    status: "pending",
+    priority: "Medium",
+    assignedTo: "",
+    chat: [],
+  });
+
+  // Using the length of tickets array to determine the new ID for the new ticket. tickets.length + 1
+  // const tickets = useSelector((state) => state.tickets);
+
+  // Function to update the state, will be given to the child input components as a prop.
+  // the input argument is a object contains just 1 prop which will overrides the prop in the ticketObject state.
+  const onChangeHandler = (input) => {
+    setTicketObject((previousState) => ({ ...previousState, ...input }));
+  };
+
+  //
   const submitHandler = (e) => {
     e.preventDefault();
 
     // prepare the ticket object
-    const ticketObj = {
-      id: 13,
-      time: "",
-      date: "",
-      subject: "",
-      departement: "",
-      description: "",
-      avatar: "",
-      status: "pending",
-      priority: "",
-      assignedTo: "",
-      chat: [],
-    };
 
     // dispatch the object
     dispatch(ticketActions.addTicket(ticketObject));
+
+    // navigate away
+    history.push("/tickets");
   };
 
   return (
-    <div className="col-10 col-xl-6 m-auto p-2 mb-2 bg-secondary rounded">
+    <div className="col-10 col-xl-8 col-xxl-6 m-auto p-2 mb-2 bg-secondary rounded">
       <div className="header rounded p-2 mb-2 bg-white text-center">
-        <h2>IT Service Ticket Form</h2>
-        <p>Please provide the details of the problem</p>
+        <h2>IT Service Ticket</h2>
+        <p>
+          Please provide the details of the problem, and we will do our best to
+          solve it.
+        </p>
         <img src={TicketIcon} alt="" />
         <hr />
       </div>
@@ -45,68 +65,37 @@ const NewTicket = (props) => {
           </label>
           <div className="col-sm-10">
             <input
-              class="form-control"
+              className="form-control"
               type="text"
               value="Abdelghani"
-              readonly
+              readOnly
               disabled
             />
           </div>
         </div>
+        <DepartementInput onChange={onChangeHandler} />
         <div className="row mb-2">
           <label htmlFor="" className="col-sm-2 col-form-label">
             Subject
           </label>
           <div className="col-sm-10">
             <input
-              class="form-control"
+              className="form-control"
               type="text"
               placeholder="Enter the subject"
             />
           </div>
         </div>
-        <div className="row mb-2">
-          <label htmlFor="" className="col-sm-2 col-form-label">
-            Department
-          </label>
-          <div className="col-sm-10">
-            <select
-              class="form-select"
-              type="text"
-              defaultValue={"Choose your departement"}
-            >
-              <option value="Choose your departement" disabled>
-                Choose your departemet
-              </option>
-              <option value="Accounting">Accounting</option>
-              <option value="Human Resources">Human Resources</option>
-              <option value="Eng Office">Eng Office</option>
-              <option value="Front Office">Front Office</option>
-              <option value="Maintenance">Maintenance</option>
-            </select>
-          </div>
-        </div>
-        <div className="row mb-2">
-          <label htmlFor="" className="col-sm-2 col-form-label">
-            Computer ID
-          </label>
-          <div className="col-sm-10">
-            <input
-              class="form-control"
-              type="text"
-              placeholder="Enter your computer ID 'Labled on your device'"
-            />
-          </div>
-        </div>
+
         <div className="row mb-2">
           <label htmlFor="" className="col-sm-2 col-form-label">
             Description
           </label>
           <div className="col-sm-10">
             <textarea
-              class="form-control"
+              className="form-control"
               type="text"
-              placeholder="Describe the problem as much as you can."
+              placeholder="Describe your problem."
             />
           </div>
         </div>
@@ -116,7 +105,7 @@ const NewTicket = (props) => {
           </label>
           <div className="col-sm-10">
             <input
-              class="form-control"
+              className="form-control"
               type="file"
               placeholder="Describe the problem as much as you can."
             />

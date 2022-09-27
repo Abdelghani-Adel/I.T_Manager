@@ -474,7 +474,9 @@ const ticketsSlice = createSlice({
   name: "ticketsSlice",
   initialState,
   reducers: {
-    addTicket: () => {},
+    addTicket: (state, action) => {
+      state.push(action.payload);
+    },
     editTicket: (state, action) => {
       const objIndex = state.findIndex((obj) => obj.id === action.payload.id);
 
