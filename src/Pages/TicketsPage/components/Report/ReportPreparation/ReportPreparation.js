@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const ReportCustom = (props) => {
+const ReportPreparation = (props) => {
   const [path, setPath] = useState("/tickets/report?");
 
   const userChangeHandler = (e) => {
@@ -82,4 +82,4 @@ const ReportCustom = (props) => {
   );
 };
 
-export default ReportCustom;
+export default ReportPreparation;

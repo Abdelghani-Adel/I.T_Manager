@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import TicketsTable from "../components/TicketsTable/TicketsTable";
 
-const TicketsByStatus = (props) => {
+const TicketsFilterStatus = (props) => {
   const ticketsState = useSelector((state) => state.tickets);
   const params = useParams();
   const tickets = ticketsState.filter(
@@ -18,4 +18,4 @@ const TicketsByStatus = (props) => {
   );
 };
 
-export default TicketsByStatus;
+export default TicketsFilterStatus;

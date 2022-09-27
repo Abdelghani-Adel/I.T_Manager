@@ -2,7 +2,7 @@ import { Redirect } from "react-router-dom";
 import DashboardPage from "../Pages/DashboardPage/DashboardPage";
 import TicketsReport from "../Pages/TicketsPage/components/Report/TicketsReport";
 import TicketDetails from "../Pages/TicketsPage/TicketDetails/TicketDetails";
-import TicketsByStatus from "../Pages/TicketsPage/TicketsByStatus/TicketsByStatus";
+import TicketsFilterStatus from "../Pages/TicketsPage/TicketsFilter/TicketsFilterStatus";
 import TicketsDashboard from "../Pages/TicketsPage/TicketsDashboard/TicketsDahboard";
 import TicketsPage from "../Pages/TicketsPage/TicketsPage";
 
@@ -69,7 +69,7 @@ const ROUTES = [
         path: "/tickets/:status",
         key: "tickets-filter-status",
         exact: true,
-        component: (props) => <TicketsByStatus {...props} />,
+        component: (props) => <TicketsFilterStatus {...props} />,
       },
       {
         path: "/tickets/ticket/:id",

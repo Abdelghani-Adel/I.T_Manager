@@ -1,4 +1,4 @@
-import Logo from "../Logo/Logo";
+import Logo from "../../Components/Logo/Logo";
 import NavBar from "./NavBar/NavBar";
 
 const Sidebar = (props) => {

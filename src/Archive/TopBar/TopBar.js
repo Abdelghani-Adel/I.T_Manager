@@ -1,4 +1,4 @@
-import Brand from "../Logo/Logo";
+import Brand from "../../Components/Logo/Logo";
 import NavBar from "../Sidebar/NavBar/NavBar";
 
 const TopBar = (props) => {

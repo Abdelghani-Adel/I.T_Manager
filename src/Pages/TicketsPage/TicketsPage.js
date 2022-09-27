@@ -1,23 +1,23 @@
 import { useState } from "react";
 import Portal from "../../Components/UI/Portal";
-import ReportCustom from "./components/Report/ReportCustom";
+import ReportPreparation from "./components/Report/ReportPreparation/ReportPreparation";
 import TicketsPageRoutes from "./TicketsRoutes";
 
 const TicketsPage = (props) => {
-  const [reportCustomIsShown, setReportCustomIsShown] = useState(false);
-  const showReportCustom = () => {
-    setReportCustomIsShown(true);
+  const [portalIsShown, setPortalIsShown] = useState(false);
+  const showPortal = () => {
+    setPortalIsShown(true);
   };
-  const hideReportCustom = () => {
-    setReportCustomIsShown(false);
+  const hidePortal = () => {
+    setPortalIsShown(false);
   };
   return (
     // START FIXED CONTENT
     <div className="row g-2">
-      {reportCustomIsShown && (
+      {portalIsShown && (
         <Portal
-          closePortal={hideReportCustom}
-          component={<ReportCustom onClosePortal={hideReportCustom} />}
+          closePortal={hidePortal}
+          component={<ReportPreparation onClosePortal={hidePortal} />}
         />
       )}
       <h2 className="mb-2 fs-sm-1 fs-md-6">Tickets</h2>
@@ -28,7 +28,7 @@ const TicketsPage = (props) => {
         <button
           className="btn btn-info border border-primary fw-bold"
           role="button"
-          onClick={showReportCustom}
+          onClick={showPortal}
         >
           Tickets Report
         </button>
