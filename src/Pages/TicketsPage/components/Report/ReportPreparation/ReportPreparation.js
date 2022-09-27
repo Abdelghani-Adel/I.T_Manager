@@ -1,11 +1,18 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import PreparePriority from "./PreparePriority";
+import PrepareStatus from "./PrepareStatus";
+import PrepareUser from "./PrepareUser";
 
 const ReportPreparation = (props) => {
   const [path, setPath] = useState("/tickets/report?");
 
-  const userChangeHandler = (e) => {
-    setPath((previousState) => previousState.concat(`&user=${e.target.value}`));
+  const onChangeHandler = (input) => {
+    setPath((previousState) => previousState.concat(input));
+  };
+
+  const userChangeHandler = (input) => {
+    setPath((previousState) => previousState.concat(`&user=${input}`));
   };
   const statusChangeHandler = (e) => {
     setPath((previousState) =>
@@ -24,51 +31,9 @@ const ReportPreparation = (props) => {
         <h3 className="mb-3 text-center text-secondary">
           Customize your report
         </h3>
-        <div className="input-group mb-3">
-          <select
-            className="form-select"
-            id="inputGroupSelect01"
-            onChange={userChangeHandler}
-            defaultValue={"All Users"}
-          >
-            <option value="All Users" disabled>
-              All Users
-            </option>
-            <option>Eslam</option>
-            <option>Hamza</option>
-            <option>Hossam</option>
-          </select>
-        </div>
-        <div className="input-group mb-3">
-          <select
-            className="form-select"
-            id="inputGroupSelect01"
-            onChange={statusChangeHandler}
-            defaultValue={"Any Status"}
-          >
-            <option value="Any Status" disabled>
-              Any Status
-            </option>
-            <option>pending</option>
-            <option>opened</option>
-            <option>solved</option>
-          </select>
-        </div>
-        <div className="input-group mb-3">
-          <select
-            className="form-select"
-            id="inputGroupSelect01"
-            onChange={priorityChangeHandler}
-            defaultValue={"Any Priority"}
-          >
-            <option value="Any Priority" disabled>
-              Any Priority
-            </option>
-            <option>High</option>
-            <option>Medium</option>
-            <option>Low</option>
-          </select>
-        </div>
+        <PrepareUser onChange={onChangeHandler} />
+        <PrepareStatus onChange={onChangeHandler} />
+        <PreparePriority onChange={onChangeHandler} />
 
         <Link
           to={path}
