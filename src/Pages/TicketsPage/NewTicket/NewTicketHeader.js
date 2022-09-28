@@ -1,6 +1,6 @@
 import TicketIcon from "../../../Assets/Images/ticketicon.png";
 
-const TicketHeader = (props) => {
+const NewTicketHeader = (props) => {
   return (
     <div className="header rounded p-2 mb-2 bg-white text-center">
       <h2>IT Service Ticket</h2>
@@ -14,4 +14,4 @@ const TicketHeader = (props) => {
   );
 };
 
-export default TicketHeader;
+export default NewTicketHeader;

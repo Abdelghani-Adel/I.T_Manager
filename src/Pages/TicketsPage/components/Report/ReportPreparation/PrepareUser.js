@@ -19,7 +19,9 @@ const PrepareUser = (props) => {
         </option>
 
         {users.map((user) => (
-          <option key={Math.random()}>{user.fullName}</option>
+          <option key={user.userID} value={user.firstName}>
+            {user.firstName}
+          </option>
         ))}
       </select>
     </div>

@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = [
   {
     id: 1,
-    date: "8/28/2022, 12:25:06 PM",
+    date: "9/21/2022, 12:25:06 PM",
     subject: "I can't access my business email",
     departement: "Accounting",
     description:
@@ -17,7 +17,7 @@ const initialState = [
     chat: [
       {
         time: "02:13 PM",
-        date: "8/28/2022, 12:25:06 PM",
+        date: "9/21/2022, 12:25:06 PM",
         author: "Eslam",
         avatar:
           "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -25,7 +25,7 @@ const initialState = [
       },
       {
         time: "02:15 PM",
-        date: "8/28/2022, 12:25:06 PM",
+        date: "9/21/2022, 12:25:06 PM",
         author: "Abdelghani Adel",
         avatar:
           "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -33,7 +33,7 @@ const initialState = [
       },
       {
         time: "02:19 PM",
-        date: "8/28/2022, 12:25:06 PM",
+        date: "9/21/2022, 12:25:06 PM",
         author: "Eslam",
         avatar:
           "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -43,7 +43,7 @@ const initialState = [
   },
   {
     id: 2,
-    date: "8/28/2022, 12:25:06 PM",
+    date: "9/21/2022, 12:25:06 PM",
     subject: "I can't print from the new system!",
     departement: "Accounting",
     description:
@@ -59,7 +59,7 @@ const initialState = [
   {
     id: 3,
     time: "02:13 PM",
-    date: "8/28/2022, 12:25:06 PM",
+    date: "9/21/2022, 12:25:06 PM",
     subject: "I forgot my system login password",
     departement: "Accounting",
     description:
@@ -73,7 +73,7 @@ const initialState = [
     chat: [
       {
         time: "02:13 PM",
-        date: "8/28/2022, 12:25:06 PM",
+        date: "9/21/2022, 12:25:06 PM",
         author: "User",
         avatar:
           "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -81,7 +81,7 @@ const initialState = [
       },
       {
         time: "02:15 PM",
-        date: "8/28/2022, 12:25:06 PM",
+        date: "9/21/2022, 12:25:06 PM",
         author: "User",
         avatar:
           "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -89,7 +89,7 @@ const initialState = [
       },
       {
         time: "02:19 PM",
-        date: "8/28/2022, 12:25:06 PM",
+        date: "9/21/2022, 12:25:06 PM",
         author: "User",
         avatar:
           "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -99,7 +99,7 @@ const initialState = [
   },
   {
     id: 4,
-    date: "8/28/2022, 12:25:06 PM",
+    date: "9/21/2022, 12:25:06 PM",
     subject: "My mouse is not functioning well!",
     departement: "Accounting",
     description:
@@ -113,7 +113,7 @@ const initialState = [
     chat: [
       {
         time: "02:13 PM",
-        date: "8/28/2022, 12:25:06 PM",
+        date: "9/21/2022, 12:25:06 PM",
         author: "User",
         avatar:
           "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -121,7 +121,7 @@ const initialState = [
       },
       {
         time: "02:15 PM",
-        date: "8/28/2022, 12:25:06 PM",
+        date: "9/21/2022, 12:25:06 PM",
         author: "User",
         avatar:
           "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -129,7 +129,7 @@ const initialState = [
       },
       {
         time: "02:19 PM",
-        date: "8/28/2022, 12:25:06 PM",
+        date: "9/21/2022, 12:25:06 PM",
         author: "User",
         avatar:
           "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -139,7 +139,7 @@ const initialState = [
   },
   {
     id: 5,
-    date: "8/28/2022, 12:25:06 PM",
+    date: "9/21/2022, 12:25:06 PM",
     subject: "How to print to the printer in the HR room",
     departement: "Accounting",
     description:
@@ -153,7 +153,7 @@ const initialState = [
     chat: [
       {
         time: "02:13 PM",
-        date: "8/28/2022, 12:25:06 PM",
+        date: "9/21/2022, 12:25:06 PM",
         author: "User",
         avatar:
           "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -161,7 +161,7 @@ const initialState = [
       },
       {
         time: "02:15 PM",
-        date: "8/28/2022, 12:25:06 PM",
+        date: "9/21/2022, 12:25:06 PM",
         author: "User",
         avatar:
           "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -169,7 +169,7 @@ const initialState = [
       },
       {
         time: "02:19 PM",
-        date: "8/28/2022, 12:25:06 PM",
+        date: "9/21/2022, 12:25:06 PM",
         author: "User",
         avatar:
           "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png",
@@ -179,7 +179,7 @@ const initialState = [
   },
   {
     id: 6,
-    date: "8/28/2022, 12:25:06 PM",
+    date: "9/21/2022, 12:25:06 PM",
     subject: "How to print to the printer in the HR room",
     departement: "Accounting",
     description:

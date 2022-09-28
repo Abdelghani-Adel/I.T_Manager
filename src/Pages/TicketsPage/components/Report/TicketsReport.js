@@ -39,9 +39,12 @@ const TicketsReport = (props) => {
   }
 
   if (startDate) {
-    filteredTickets = filteredTickets.filter(
-      (ticket) => ticket.date.toLocaleDateString() >= startDate
-    );
+    filteredTickets = filteredTickets.filter((ticket) => {
+      // Formatting the ticket date so I can compare it to the startDate
+      // startDate is formatted with the same method toLocaleString().
+      const ticketDate = new Date(ticket.date).toLocaleDateString();
+      return ticketDate >= startDate;
+    });
   }
 
   return (
