@@ -27,7 +27,9 @@ const TicketAssignPortal = (props) => {
         >
           <option>Current: {props.ticket.assignedTo}</option>
           {ITUsers.map((user) => (
-            <option value={user.fullName}>{user.fullName}</option>
+            <option key={Math.random()} value={user.fullName}>
+              {user.fullName}
+            </option>
           ))}
         </select>
       </div>

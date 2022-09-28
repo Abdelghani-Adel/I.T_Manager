@@ -14,10 +14,13 @@ const NewTicket = (props) => {
   const dispatch = useDispatch();
   const history = useHistory();
 
+  const today = new Date();
+  const stringDate = today.toString();
+
   const [ticketObject, setTicketObject] = useState({
     id: `${Math.random()}`,
     user: "",
-    date: "",
+    date: stringDate,
     subject: "",
     departement: "",
     description: "",
@@ -54,7 +57,7 @@ const NewTicket = (props) => {
     <div className="col-10 col-xl-8 col-xxl-6 m-auto p-2 mb-2 bg-secondary rounded">
       <TicketHeader />
       <form className="bg-white p-2 rounded">
-        <NameInput />
+        <NameInput onChange={onChangeHandler} />
         <DepartementInput onChange={onChangeHandler} />
         <SubjectInput onChange={onChangeHandler} />
         <DescriptionInput onChange={onChangeHandler} />

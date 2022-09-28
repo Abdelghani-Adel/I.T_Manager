@@ -13,6 +13,8 @@ const TicketsReport = (props) => {
   const status = params.get("status");
   const priority = params.get("priority");
   const assignedTo = params.get("assignedTo");
+  const startDate = params.get("from");
+  const endDate = params.get("to");
 
   if (user !== "All" && user) {
     filteredTickets = filteredTickets.filter((ticket) => ticket.user === user);
@@ -33,6 +35,12 @@ const TicketsReport = (props) => {
   if (assignedTo !== "All" && assignedTo) {
     filteredTickets = filteredTickets.filter(
       (ticket) => ticket.assignedTo === assignedTo
+    );
+  }
+
+  if (startDate) {
+    filteredTickets = filteredTickets.filter(
+      (ticket) => ticket.date.toLocaleDateString() >= startDate
     );
   }
 
