@@ -1,21 +1,25 @@
-import classes from "./MyTickets.module.css";
-import ProgressBar from "../../../../Components/UI/ProgressBar/ProgressBar";
+import { useSelector } from "react-redux";
+import TicketsTable from "../../components/TicketsTable/TicketsTable";
 
 const MyTickets = (props) => {
-  const quantity = 7;
-  const width = (2 / 3) * 100;
+  const user = "Hamza"; // consider the current session opened bu Hamza
+  const ticketsState = useSelector((state) => state.tickets);
+
+  // Check ticket.user in case the user is an employee
+  // Check ticket.assignedTo in case the user is an I.T Employee
+  const myTickets = ticketsState.filter(
+    (ticket) => ticket.user == user || ticket.assignedTo == user
+  );
+
   return (
-    <div className="col-lg-5">
-      <div className={`${classes.wrapper} p-2 wrapper wrapper--primary`}>
+    <div className="col-lg-6">
+      <div className={`p-2 wrapper wrapper--primary`}>
         <div className="d-flex justify-content-between">
-          <h3 className="text-secondary">My opened tickets</h3>
-          <p className="fw-bold text-primary fs-4">{quantity}</p>
+          <h3 className="text-secondary">My tickets</h3>
+          <p className="fw-bold text-primary fs-4">{myTickets.length}</p>
         </div>
 
-        <ProgressBar title="Medium" number={2} width={(2 / quantity) * 100} />
-        <ProgressBar title="Critical" number={1} width={(1 / quantity) * 100} />
-        <ProgressBar title="High" number={3} width={(3 / quantity) * 100} />
-        <ProgressBar title="Urgent" number={1} width={(1 / quantity) * 100} />
+        <TicketsTable tickets={myTickets} />
       </div>
     </div>
   );

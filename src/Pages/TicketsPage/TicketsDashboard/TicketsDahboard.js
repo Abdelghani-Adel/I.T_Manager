@@ -8,8 +8,8 @@ const TicketsDashboard = (props) => {
     <Fragment>
       {/* Direct parent is TicketsPage with 'row' class, giv the parent row 'g-2' class */}
       <TicketsSummary className="col-12" />
-      <MyTickets className="col-4 p-2" />
       <LatestTickets className="col-8 p-2" />
+      <MyTickets className="col-4 p-2" />
     </Fragment>
   );
 };

@@ -13,7 +13,7 @@ const LatestTickets = () => {
   const tickets = latestTickets.reverse();
 
   return (
-    <div className="col-lg-7">
+    <div className="col-lg-6">
       <div className="p-2 wrapper wrapper--primary">
         <h3 className="text-secondary">Latest Tickets</h3>
 
