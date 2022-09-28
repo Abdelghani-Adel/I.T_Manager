@@ -3,8 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = [
   {
     id: 1,
-    time: "02:13 PM",
-    date: new Date(2022, 3, 26),
+    date: new Date(2022, 3, 26, 14, 50),
     subject: "I can't access my business email",
     departement: "Accounting",
     description:
@@ -44,8 +43,7 @@ const initialState = [
   },
   {
     id: 2,
-    time: "02:13 PM",
-    date: new Date(2022, 5, 6),
+    date: new Date(2022, 5, 6, 14, 13),
     subject: "I can't print from the new system!",
     departement: "Accounting",
     description:
@@ -101,8 +99,7 @@ const initialState = [
   },
   {
     id: 4,
-    time: "02:13 PM",
-    date: new Date(2022, 2, 13),
+    date: new Date(2022, 2, 13, 14, 13),
     subject: "My mouse is not functioning well!",
     departement: "Accounting",
     description:
@@ -142,8 +139,7 @@ const initialState = [
   },
   {
     id: 5,
-    time: "02:13 PM",
-    date: new Date(2022, 7, 20),
+    date: new Date(2022, 7, 20, 11, 59),
     subject: "How to print to the printer in the HR room",
     departement: "Accounting",
     description:
@@ -183,8 +179,7 @@ const initialState = [
   },
   {
     id: 6,
-    time: "02:13 PM",
-    date: new Date(2022, 11, 30),
+    date: new Date(2022, 11, 30, 16, 42),
     subject: "How to print to the printer in the HR room",
     departement: "Accounting",
     description:
@@ -224,8 +219,7 @@ const initialState = [
   },
   {
     id: 7,
-    time: "02:13 PM",
-    date: new Date(2022, 1, 18),
+    date: new Date(2022, 1, 18, 18, 13),
     subject: "How to print to the printer in the HR room",
     departement: "Accounting",
     description:
@@ -265,8 +259,7 @@ const initialState = [
   },
   {
     id: 8,
-    time: "02:13 PM",
-    date: new Date(2022, 6, 23),
+    date: new Date(2022, 6, 23, 18, 20),
     subject: "How to print to the printer in the HR room",
     departement: "Accounting",
     description:
@@ -306,8 +299,7 @@ const initialState = [
   },
   {
     id: 9,
-    time: "02:13 PM",
-    date: new Date(2022, 4, 18),
+    date: new Date(2022, 4, 18, 21, 39),
     subject: "How to print to the printer in the HR room",
     departement: "Accounting",
     description:
@@ -347,8 +339,7 @@ const initialState = [
   },
   {
     id: 10,
-    time: "02:13 PM",
-    date: new Date(2022, 8, 13),
+    date: new Date(2022, 8, 13, 16, 49),
     subject: "How to print to the printer in the HR room",
     departement: "Accounting",
     description:
@@ -388,8 +379,7 @@ const initialState = [
   },
   {
     id: 11,
-    time: "02:13 PM",
-    date: new Date(2022, 0, 30),
+    date: new Date(2022, 0, 30, 13, 29),
     subject: "How to print to the printer in the HR room",
     departement: "Accounting",
     description:
@@ -429,8 +419,7 @@ const initialState = [
   },
   {
     id: 12,
-    time: "02:13 PM",
-    date: new Date(2022, 2, 30),
+    date: new Date(2022, 2, 30, 17, 59),
     subject: "How to print to the printer in the HR room",
     departement: "Accounting",
     description:

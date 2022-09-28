@@ -42,7 +42,8 @@ const TicketDetails = (props) => {
           <div className="w-75">
             <p className="fw-bold fs-4 mb-0">{ticket.subject}</p>
             <p className="mb-0 text-muted">
-              Reported on {ticket.date.toLocaleString()} at {ticket.time}{" "}
+              Reported on {ticket.date.toLocaleDateString()} at{" "}
+              {ticket.date.toLocaleTimeString()}{" "}
               <span className="fw-bold">({ticketAge} days ago)</span>
             </p>
             <TicketAssign ticket={ticket} />
