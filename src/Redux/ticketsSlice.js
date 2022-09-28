@@ -4,7 +4,7 @@ const initialState = [
   {
     id: 1,
     time: "02:13 PM",
-    date: "02/26/2022",
+    date: new Date(2022, 3, 26),
     subject: "I can't access my business email",
     departement: "Accounting",
     description:
@@ -45,7 +45,7 @@ const initialState = [
   {
     id: 2,
     time: "02:13 PM",
-    date: "06/06/2022",
+    date: new Date(2022, 5, 6),
     subject: "I can't print from the new system!",
     departement: "Accounting",
     description:
@@ -61,7 +61,7 @@ const initialState = [
   {
     id: 3,
     time: "02:13 PM",
-    date: "08/26/2022",
+    date: new Date(2022, 8, 26),
     subject: "I forgot my system login password",
     departement: "Accounting",
     description:
@@ -102,7 +102,7 @@ const initialState = [
   {
     id: 4,
     time: "02:13 PM",
-    date: "02/13/2022",
+    date: new Date(2022, 2, 13),
     subject: "My mouse is not functioning well!",
     departement: "Accounting",
     description:
@@ -143,7 +143,7 @@ const initialState = [
   {
     id: 5,
     time: "02:13 PM",
-    date: "08/20/2022",
+    date: new Date(2022, 7, 20),
     subject: "How to print to the printer in the HR room",
     departement: "Accounting",
     description:
@@ -184,7 +184,7 @@ const initialState = [
   {
     id: 6,
     time: "02:13 PM",
-    date: "12/30/2021",
+    date: new Date(2022, 11, 30),
     subject: "How to print to the printer in the HR room",
     departement: "Accounting",
     description:
@@ -225,7 +225,7 @@ const initialState = [
   {
     id: 7,
     time: "02:13 PM",
-    date: "02/18/2022",
+    date: new Date(2022, 1, 18),
     subject: "How to print to the printer in the HR room",
     departement: "Accounting",
     description:
@@ -266,7 +266,7 @@ const initialState = [
   {
     id: 8,
     time: "02:13 PM",
-    date: "07/23/2022",
+    date: new Date(2022, 6, 23),
     subject: "How to print to the printer in the HR room",
     departement: "Accounting",
     description:
@@ -307,7 +307,7 @@ const initialState = [
   {
     id: 9,
     time: "02:13 PM",
-    date: "05/18/2022",
+    date: new Date(2022, 4, 18),
     subject: "How to print to the printer in the HR room",
     departement: "Accounting",
     description:
@@ -348,7 +348,7 @@ const initialState = [
   {
     id: 10,
     time: "02:13 PM",
-    date: "09/13/2022",
+    date: new Date(2022, 8, 13),
     subject: "How to print to the printer in the HR room",
     departement: "Accounting",
     description:
@@ -389,7 +389,7 @@ const initialState = [
   {
     id: 11,
     time: "02:13 PM",
-    date: "01/30/2022",
+    date: new Date(2022, 0, 30),
     subject: "How to print to the printer in the HR room",
     departement: "Accounting",
     description:
@@ -430,7 +430,7 @@ const initialState = [
   {
     id: 12,
     time: "02:13 PM",
-    date: "03/30/2022",
+    date: new Date(2022, 2, 30),
     subject: "How to print to the printer in the HR room",
     departement: "Accounting",
     description:
