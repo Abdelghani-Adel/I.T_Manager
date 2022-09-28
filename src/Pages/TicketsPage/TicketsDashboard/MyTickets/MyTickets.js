@@ -13,10 +13,10 @@ const MyTickets = (props) => {
 
   return (
     <div className="col-lg-6">
-      <div className={`p-2 wrapper wrapper--primary`}>
+      <div className="p-2 wrapper wrapper--primary">
         <div className="d-flex justify-content-between">
           <h3 className="text-secondary">My tickets</h3>
-          <p className="fw-bold text-primary fs-4">{myTickets.length}</p>
+          <p className="fw-bold text-primary fs-4 mb-0">{myTickets.length}</p>
         </div>
 
         <TicketsTable tickets={myTickets} />

@@ -14,6 +14,7 @@ const PrepareStatus = (props) => {
         </option>
         <option>pending</option>
         <option>opened</option>
+        <option>overdue</option>
         <option>solved</option>
       </select>
     </div>
