@@ -1,10 +1,16 @@
 import { useSelector } from "react-redux";
 import TicketsTable from "../../components/TicketsTable/TicketsTable";
 
-const LatestTickets = (props) => {
+const LatestTickets = () => {
   const ticketsState = useSelector((state) => state.tickets);
-  console.log(ticketsState);
-  const tickets = ticketsState.filter((ticket, index) => index < 5);
+
+  // Filtering the tickets to get the latest 5 tickets
+  const latestTickets = ticketsState.filter(
+    (ticket, index) => index >= ticketsState.length - 5
+  );
+
+  // Reversing the latest tickets array, to make the latest ticket at top of the table
+  const tickets = latestTickets.reverse();
 
   return (
     <div className="col-lg-7">

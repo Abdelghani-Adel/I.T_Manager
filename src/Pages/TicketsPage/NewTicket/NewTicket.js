@@ -15,7 +15,7 @@ const NewTicket = (props) => {
   const history = useHistory();
 
   const [ticketObject, setTicketObject] = useState({
-    id: "",
+    id: `${Math.random()}`,
     user: "",
     date: "",
     subject: "",

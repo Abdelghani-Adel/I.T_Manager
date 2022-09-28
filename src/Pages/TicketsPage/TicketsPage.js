@@ -14,7 +14,7 @@ const TicketsPage = (props) => {
   };
   return (
     // START FIXED CONTENT
-    <div className="row g-2">
+    <div className="row g-2 overflow-auto">
       {portalIsShown && (
         <Portal
           closePortal={hidePortal}
