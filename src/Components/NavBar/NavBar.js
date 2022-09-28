@@ -12,6 +12,7 @@ const NavBar = (props) => {
         <NavBarItem path="/dashboard" title="Dashboard" icon="grid" />
         <NavBarItem path="/tickets" title="Tickets" icon="stickies" />
         <NavBarItem path="/assets" title="Assets" icon="window" />
+        <NavBarItem path="/inventory" title="Inventory" icon="window" />
         <NavBarItem path="/settings" title="Settings" icon="gear" />
       </ul>
     </nav>
