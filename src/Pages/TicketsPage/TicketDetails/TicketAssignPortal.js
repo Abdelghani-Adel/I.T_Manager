@@ -19,7 +19,7 @@ const TicketAssignPortal = (props) => {
   return (
     <div className="modal-overlay p-2 bg-white w-50 rounded">
       <div className="input-group d-flex align-items-center">
-        <p className="text-muted m-0 w-25">Assigned To: </p>
+        <p className="text-muted m-0 w-25">Assign this ticket to: </p>
         <select
           className="form-select form-select-sm rounded"
           defaultValue={props.ticket.assignedTo}

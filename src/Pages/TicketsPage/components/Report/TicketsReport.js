@@ -12,6 +12,7 @@ const TicketsReport = (props) => {
   const user = params.get("user");
   const status = params.get("status");
   const priority = params.get("priority");
+  const assignedTo = params.get("assignedTo");
 
   if (user !== "All" && user) {
     filteredTickets = filteredTickets.filter((ticket) => ticket.user === user);
@@ -26,6 +27,12 @@ const TicketsReport = (props) => {
   if (priority !== "All" && priority) {
     filteredTickets = filteredTickets.filter(
       (ticket) => ticket.priority === priority
+    );
+  }
+
+  if (assignedTo !== "All" && assignedTo) {
+    filteredTickets = filteredTickets.filter(
+      (ticket) => ticket.assignedTo === assignedTo
     );
   }
 

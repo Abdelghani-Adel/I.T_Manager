@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import PrepareAssignedTo from "./PrepareAssignedTo";
 import PrepareDate from "./PrepareDate";
 import PreparePriority from "./PreparePriority";
 import PrepareStatus from "./PrepareStatus";
@@ -22,6 +23,7 @@ const ReportPreparation = (props) => {
         <PrepareUser onChange={onChangeHandler} />
         <PrepareStatus onChange={onChangeHandler} />
         <PreparePriority onChange={onChangeHandler} />
+        <PrepareAssignedTo onChange={onChangeHandler} />
 
         <Link
           to={path}
