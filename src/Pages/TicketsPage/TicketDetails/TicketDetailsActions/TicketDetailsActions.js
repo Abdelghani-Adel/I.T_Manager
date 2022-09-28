@@ -1,3 +1,4 @@
+import TicketAssignBtn from "./TicketAssignBtn";
 import TicketClose from "./TicketClose";
 
 const TicketDetailsActions = (props) => {
@@ -11,9 +12,7 @@ const TicketDetailsActions = (props) => {
         <button onClick={addNotehandler} className="btn btn-secondary">
           <i className="bi bi-sticky me-2"> Add Note</i>
         </button>
-        <button onClick={assignHandler} className="btn btn-secondary">
-          <i className="bi bi-chat me-2"> Assign to</i>
-        </button>
+        <TicketAssignBtn togglePortal={props.togglePortal} />
         <TicketClose ticket={props.ticket} />
       </div>
     </div>
