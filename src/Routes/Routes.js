@@ -9,7 +9,7 @@ import NewTicket from "../Pages/TicketsPage/NewTicket/NewTicket";
 import AssetsPage from "../Pages/AssetsPage/AssetsPage";
 import AssetsDashboard from "../Pages/AssetsPage/AssetsDashboard/AssetsDashboard";
 import AssetsSoftware from "../Pages/AssetsPage/AssetsSoftware/AssetsSoftware";
-import SoftwareDetails from "../Pages/AssetsPage/AssetsSoftware/SoftwareDetails";
+import SoftwareDetails from "../Pages/AssetsPage/AssetsSoftware/SoftwareDetails/SoftwareDetails";
 
 const ROUTES = [
   {
