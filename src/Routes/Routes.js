@@ -37,6 +37,12 @@ const ROUTES = [
         component: (props) => <TicketsDashboard {...props} />,
         routes: [],
       },
+      {
+        path: "/dashboard/assets",
+        key: "dashboard-tickets",
+        exact: true,
+        component: (props) => <AssetsDashboard {...props} />,
+      },
     ],
   },
   {

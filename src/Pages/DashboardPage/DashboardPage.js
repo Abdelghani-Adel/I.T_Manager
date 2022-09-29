@@ -5,7 +5,7 @@ const DashboardPage = (props) => {
   return (
     <div className="row g-2">
       <h2 className="my-2">Dashboard</h2>
-      <SubNav links={["/dashboard/Tickets", "/dashboard/Inventory"]} />
+      <SubNav links={["/dashboard/Tickets", "/dashboard/Assets"]} />
 
       <DashboardPageRoutes routes={props.routes} />
     </div>

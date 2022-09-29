@@ -16,6 +16,7 @@ const SoftwareDetails = (props) => {
       </h3>
       <hr className="text-white" />
       <div className="rounded bg-white p-2 mb-2">
+        <h4 className="fw-bold text-center">Information</h4>
         <h4>
           purchased on:{" "}
           <span className="text-primary fw-bold">{software.purchasedOn}</span>

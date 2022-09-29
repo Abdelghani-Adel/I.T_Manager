@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
-import Table from "../../../Components/UI/Table/Table";
+import Table from "../../../../Components/UI/Table/Table";
 
-const AssetsTable = (props) => {
+const AssetsSoftwareTable = (props) => {
   const dataArray = useSelector((state) => state.software);
 
   const columns = [
@@ -25,4 +25,4 @@ const AssetsTable = (props) => {
   );
 };
 
-export default AssetsTable;
+export default AssetsSoftwareTable;
