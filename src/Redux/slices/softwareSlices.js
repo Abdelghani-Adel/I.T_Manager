@@ -6,6 +6,7 @@ const initialState = [
     name: "Veeam Backup",
     purchasedOn: "9/23/2022",
     purchasedTo: "Abdelghani Adel",
+    website: "https://www.veeam.com/",
     annualFees: true,
     monthlyFees: false,
     lifeTimeLicense: false,
@@ -14,7 +15,7 @@ const initialState = [
     price: "570",
     renewPrice: "570",
     maintenancePrice: null,
-    licenseKey: "ekutb-8itn2-N9L99-aieJ9-33BNw0",
+    licenseKey: "ekutb-8itn2-N9L99-aieJ9-33BNw",
     expired: false,
   },
   {
@@ -22,6 +23,7 @@ const initialState = [
     name: "IDM",
     purchasedOn: "9/18/2021",
     purchasedTo: "Abdelghani Adel",
+    website: "https://www.internetdownloadmanager.com/",
     annualFees: false,
     monthlyFees: false,
     lifeTimeLicense: true,
@@ -30,7 +32,7 @@ const initialState = [
     price: "310",
     renewPrice: null,
     maintenancePrice: null,
-    licenseKey: "ekutb-8itn2-N9L99-aieJ9-33BNw0",
+    licenseKey: "ekutb-8itn2-N9L99-aieJ9-33BNw",
     expired: true,
   },
   {
@@ -38,6 +40,7 @@ const initialState = [
     name: "Onyx ERP",
     purchasedOn: "3/29/2022",
     purchasedTo: "Mohamed Eladawy",
+    website: "https://www.ultimate-erp.com/",
     annualFees: true,
     monthlyFees: false,
     lifeTimeLicense: false,
@@ -46,7 +49,7 @@ const initialState = [
     price: "20000",
     renewPrice: "2000",
     maintenancePrice: null,
-    licenseKey: "ekutb-8itn2-N9L99-aieJ9-33BNw0",
+    licenseKey: "ekutb-8itn2-N9L99-aieJ9-33BNw",
     expired: false,
   },
   {
@@ -54,6 +57,7 @@ const initialState = [
     name: "Alyasseer ERP",
     purchasedOn: "3/29/2022",
     purchasedTo: "Mohamed Eladawy",
+    website: "http://alyaseerapp.com/",
     annualFees: false,
     monthlyFees: false,
     lifeTimeLicense: true,
@@ -70,6 +74,7 @@ const initialState = [
     name: "Logikal Orgadata",
     purchasedOn: "3/29/2022",
     purchasedTo: "Mohamed Eladawy",
+    website: "https://www.orgadata.com/",
     annualFees: true,
     monthlyFees: false,
     lifeTimeLicense: false,
@@ -78,7 +83,7 @@ const initialState = [
     price: "20000",
     renewPrice: "$ 20000",
     maintenancePrice: null,
-    licenseKey: "ekutb-8itn2-N9L99-aieJ9-33BNw0",
+    licenseKey: "ekutb-8itn2-N9L99-aieJ9-33BNw",
     expired: false,
   },
 ];
@@ -94,6 +99,10 @@ const softwareSlice = createSlice({
     renewSoftware: (state, action) => {
       const objIndex = state.findIndex((obj) => obj.id === action.payload);
       state[objIndex].expired = false;
+    },
+    editSoftware: (state, action) => {
+      const objIndex = state.findIndex((obj) => obj.id === action.payload.id);
+      state[objIndex].licenseKey = action.payload.licenseKey;
     },
   },
 });

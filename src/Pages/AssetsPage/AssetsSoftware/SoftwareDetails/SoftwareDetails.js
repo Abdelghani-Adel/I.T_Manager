@@ -35,6 +35,10 @@ const SoftwareDetails = (props) => {
             {software.price} {software.currency}
           </span>
         </h4>
+        <h4>
+          License Key:{" "}
+          <span className="text-secondary">{software.licenseKey}</span>
+        </h4>
       </div>
 
       <DetailsActions software={software} />
