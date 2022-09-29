@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
-import { ticketActions } from "../../../../Redux/ticketsSlice";
+import { ticketActions } from "../../../../Redux/slices/ticketsSlice";
 
 const TicketClose = (props) => {
   const dispatch = useDispatch();

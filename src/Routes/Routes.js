@@ -6,6 +6,8 @@ import TicketsFilterStatus from "../Pages/TicketsPage/TicketsFilter/TicketsFilte
 import TicketsDashboard from "../Pages/TicketsPage/TicketsDashboard/TicketsDahboard";
 import TicketsPage from "../Pages/TicketsPage/TicketsPage";
 import NewTicket from "../Pages/TicketsPage/NewTicket/NewTicket";
+import AssetsPage from "../Pages/AssetsPage/AssetsPage";
+import AssetsDashboard from "../Pages/AssetsPage/AssetsDashboard/AssetsDashboard";
 
 const ROUTES = [
   {
@@ -34,13 +36,6 @@ const ROUTES = [
         routes: [],
       },
     ],
-  },
-  {
-    path: "/assets",
-    key: "assets-root",
-    exact: false,
-    component: () => <h1>Assets</h1>,
-    routes: [],
   },
   {
     path: "/tickets",
@@ -83,6 +78,26 @@ const ROUTES = [
         key: "ticket-details",
         exact: true,
         component: (props) => <TicketDetails {...props} />,
+      },
+    ],
+  },
+  {
+    path: "/assets",
+    key: "assets-root",
+    exact: false,
+    component: (props) => <AssetsPage {...props} />,
+    routes: [
+      {
+        path: "/assets",
+        key: "assets-page",
+        exact: true,
+        component: () => <Redirect to="/assets/dashboard" />,
+      },
+      {
+        path: "/assets/dashboard",
+        key: "assets-dashboard",
+        exact: true,
+        component: (props) => <AssetsDashboard {...props} />,
       },
     ],
   },

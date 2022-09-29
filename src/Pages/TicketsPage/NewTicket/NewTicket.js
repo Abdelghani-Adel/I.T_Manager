@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
-import { ticketActions } from "../../../Redux/ticketsSlice";
+import { ticketActions } from "../../../Redux/slices/ticketsSlice";
 import DepartementInput from "./DepartementInput";
 import DescriptionInput from "./DescriptionInput";
 import NameInput from "./NameInput";

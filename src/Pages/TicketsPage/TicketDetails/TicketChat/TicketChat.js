@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { useDispatch } from "react-redux";
-import { ticketActions } from "../../../../Redux/ticketsSlice";
+import { ticketActions } from "../../../../Redux/slices/ticketsSlice";
 import TicketComment from "./TicketComment";
 
 const TicketChat = (props) => {

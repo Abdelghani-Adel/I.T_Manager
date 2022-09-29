@@ -16,7 +16,7 @@ const TicketsSummary = (props) => {
   );
 
   return (
-    <div className={props.className}>
+    <div className="col-12">
       <div className="row g-2 row-cols-1 row-cols-md-5">
         <TicketsSummaryCard
           title="Pending Tickets"

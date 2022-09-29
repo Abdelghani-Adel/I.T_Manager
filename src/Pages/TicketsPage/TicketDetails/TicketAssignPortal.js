@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { ticketActions } from "../../../Redux/ticketsSlice";
+import { ticketActions } from "../../../Redux/slices/ticketsSlice";
 
 const TicketAssignPortal = (props) => {
   const dispatch = useDispatch();
