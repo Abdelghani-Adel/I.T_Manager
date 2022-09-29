@@ -13,7 +13,7 @@ const AssetsTable = (props) => {
   ];
   const dataTitle = "Software Assets";
 
-  const basePath = "/assets";
+  const basePath = "/assets/software/details";
 
   return (
     <Table

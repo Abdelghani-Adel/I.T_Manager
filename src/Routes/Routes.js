@@ -8,6 +8,8 @@ import TicketsPage from "../Pages/TicketsPage/TicketsPage";
 import NewTicket from "../Pages/TicketsPage/NewTicket/NewTicket";
 import AssetsPage from "../Pages/AssetsPage/AssetsPage";
 import AssetsDashboard from "../Pages/AssetsPage/AssetsDashboard/AssetsDashboard";
+import AssetsSoftware from "../Pages/AssetsPage/AssetsSoftware/AssetsSoftware";
+import SoftwareDetails from "../Pages/AssetsPage/AssetsSoftware/SoftwareDetails";
 
 const ROUTES = [
   {
@@ -98,6 +100,18 @@ const ROUTES = [
         key: "assets-dashboard",
         exact: true,
         component: (props) => <AssetsDashboard {...props} />,
+      },
+      {
+        path: "/assets/software",
+        key: "assets-software",
+        exact: true,
+        component: (props) => <AssetsSoftware {...props} />,
+      },
+      {
+        path: "/assets/software/details/:id",
+        key: "software-singular",
+        exact: true,
+        component: (props) => <SoftwareDetails {...props} />,
       },
     ],
   },
