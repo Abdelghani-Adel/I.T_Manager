@@ -8,10 +8,15 @@ const TableRow = (props) => {
     console.log(e.currentTarget.id);
   };
 
+  // [3] colsTitles: [{title: Subject, className: ''}]
+
   return (
-    <tr id={props.ticket.id} className="cursor--pointer" onClick={clickHandler}>
+    <tr id={props.object.id} className="cursor--pointer" onClick={clickHandler}>
       <th scope="row">{props.index + 1}</th>
-      <td className={props.className}>{}</td>
+      <td>{props.object[`${props.colsTitles[0].title}`]}</td>
+      <td>{props.object[`${props.colsTitles[1].title}`]}</td>
+      <td>{props.object[`${props.colsTitles[2].title}`]}</td>
+      <td>{props.object[`${props.colsTitles[3].title}`]}</td>
     </tr>
   );
 };

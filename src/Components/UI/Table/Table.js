@@ -10,7 +10,7 @@ import { Fragment } from "react";
 import TableRow from "./TableRow";
 
 const Table = (props) => {
-  const hasData = props.dataArray > 0;
+  const hasData = props.dataArray.length > 0;
 
   return (
     <Fragment>
@@ -35,7 +35,12 @@ const Table = (props) => {
 
           <tbody>
             {props.dataArray.map((object, index) => (
-              <TableRow key={object.id} object={object} index={index} />
+              <TableRow
+                key={object.id}
+                object={object}
+                index={index}
+                colsTitles={props.colsTitles}
+              />
             ))}
           </tbody>
         </table>

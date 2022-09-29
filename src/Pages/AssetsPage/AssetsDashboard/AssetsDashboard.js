@@ -2,12 +2,20 @@ import { Fragment } from "react";
 import Table from "../../../Components/UI/Table/Table";
 
 const AssetsDashboard = (props) => {
-  const dataArray = [{}];
+  const dataArray = [
+    {
+      id: 1,
+      subject: "I can't print",
+      status: "Pending",
+      user: "Saleh",
+      priority: "high",
+    },
+  ];
   const colsTitles = [
-    { title: "col1", className: "", id: 1 },
-    { title: "col2", className: "", id: 2 },
-    { title: "col3", className: "", id: 3 },
-    { title: "col4", className: "", id: 4 },
+    { title: "subject", className: "", id: 1 },
+    { title: "user", className: "", id: 2 },
+    { title: "status", className: "", id: 3 },
+    { title: "priority", className: "", id: 4 },
   ];
   return (
     <Fragment>
