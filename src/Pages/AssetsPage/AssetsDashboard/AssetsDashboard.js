@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import Table from "../../../Components/UI/Table/Table";
+import AssetsTable from "./AssetsTable";
 
 const AssetsDashboard = (props) => {
   const dataArray = [
@@ -11,7 +12,7 @@ const AssetsDashboard = (props) => {
       priority: "high",
     },
   ];
-  const colsTitles = [
+  const columns = [
     { title: "subject", className: "", id: 1 },
     { title: "user", className: "", id: 2 },
     { title: "status", className: "", id: 3 },
@@ -20,7 +21,8 @@ const AssetsDashboard = (props) => {
   return (
     <Fragment>
       <h2>Assets Dashboard</h2>
-      <Table dataArray={dataArray} colsTitles={colsTitles} dataTitle="Assets" />
+      {/* <Table dataArray={dataArray} columns={columns} dataTitle="Assets" /> */}
+      <AssetsTable dataArray={dataArray} columns={columns} dataTitle="Assets" />
     </Fragment>
   );
 };

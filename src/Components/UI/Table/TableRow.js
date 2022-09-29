@@ -13,10 +13,10 @@ const TableRow = (props) => {
   return (
     <tr id={props.object.id} className="cursor--pointer" onClick={clickHandler}>
       <th scope="row">{props.index + 1}</th>
-      <td>{props.object[`${props.colsTitles[0].title}`]}</td>
-      <td>{props.object[`${props.colsTitles[1].title}`]}</td>
-      <td>{props.object[`${props.colsTitles[2].title}`]}</td>
-      <td>{props.object[`${props.colsTitles[3].title}`]}</td>
+      <td>{props.object[`${props.columns[0].title}`]}</td>
+      <td>{props.object[`${props.columns[1].title}`]}</td>
+      <td>{props.object[`${props.columns[2].title}`]}</td>
+      <td>{props.object[`${props.columns[3].title}`]}</td>
     </tr>
   );
 };

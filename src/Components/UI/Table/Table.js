@@ -1,8 +1,8 @@
 /*
 Needed Props: -
-[1] dataArray: 
-[2] dataTitle:
-[3] colsTitles: [{title: Subject, className: ''}]
+[1] dataArray = [{}, {}, {}, {}]
+[2] dataTitle = 'Title'
+[3] columns = [{title: 'Subject', className: ''}, {title: 'statue', className: ''}]
 
 */
 
@@ -21,11 +21,11 @@ const Table = (props) => {
       )}
 
       {hasData && (
-        <table className="table-hover table-bordered order">
+        <table className="table table-hover table-bordered border">
           <thead className="table-secondary">
             <tr>
               <th scope="col">#</th>
-              {props.colsTitles.map((column) => (
+              {props.columns.map((column) => (
                 <th key={column.id} className={column.className}>
                   {column.title}
                 </th>
@@ -39,7 +39,7 @@ const Table = (props) => {
                 key={object.id}
                 object={object}
                 index={index}
-                colsTitles={props.colsTitles}
+                columns={props.columns}
               />
             ))}
           </tbody>
