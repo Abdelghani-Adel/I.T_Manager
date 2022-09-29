@@ -7,7 +7,7 @@ const AssetsTable = (props) => {
   const columns = [
     { id: 1, title: "name", style: "" },
     { id: 2, title: "licenseKey", style: "" },
-    { id: 3, title: "purchasedTo", style: "" },
+    { id: 3, title: "purchasedOn", style: "" },
     { id: 4, title: "price", style: "" },
     { id: 5, title: "currency", style: "" },
   ];
