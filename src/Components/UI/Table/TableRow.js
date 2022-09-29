@@ -2,22 +2,23 @@ import { useHistory, useLocation } from "react-router-dom";
 
 const TableRow = (props) => {
   const history = useHistory();
-  const location = useLocation();
-
-  console.log(props.basePath);
 
   const clickHandler = (e) => {
     history.push(`${props.basePath}/${e.currentTarget.id}`);
-    console.log(e.currentTarget.id);
   };
 
   return (
     <tr id={props.object.id} className="cursor--pointer" onClick={clickHandler}>
       <th scope="row">{props.index + 1}</th>
-      <td>{props.object[`${props.columns[0].title}`]}</td>
+      {props.columns.map((column) => (
+        <td key={column.id}>{props.object[`${column.title}`]}</td>
+      ))}
+
+      {/* <td>{props.object[`${props.columns[0].title}`]}</td>
       <td>{props.object[`${props.columns[1].title}`]}</td>
       <td>{props.object[`${props.columns[2].title}`]}</td>
       <td>{props.object[`${props.columns[3].title}`]}</td>
+      <td>{props.object[`${props.columns[4].title}`]}</td> */}
     </tr>
   );
 };
@@ -46,3 +47,14 @@ export default TableRow;
     Now, you can manipulate the table easily from the columns array you pass to the Table component
     
   */
+
+/*
+  <tr id={props.object.id} className="cursor--pointer" onClick={clickHandler}>
+    <th scope="row">{props.index + 1}</th>
+    <td>{props.object[`${props.columns[0].title}`]}</td>
+    <td>{props.object[`${props.columns[1].title}`]}</td>
+    <td>{props.object[`${props.columns[2].title}`]}</td>
+    <td>{props.object[`${props.columns[3].title}`]}</td>
+    <td>{props.object[`${props.columns[4].title}`]}</td>
+  </tr>
+*/
