@@ -37,7 +37,7 @@ const SoftwareDetails = (props) => {
         </h4>
       </div>
 
-      <DetailsActions />
+      <DetailsActions software={software} />
     </div>
   );
 };

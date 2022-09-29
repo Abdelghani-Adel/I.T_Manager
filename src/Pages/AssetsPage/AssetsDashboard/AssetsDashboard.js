@@ -5,7 +5,7 @@ import AssetsTable from "./AssetsTable";
 const AssetsDashboard = (props) => {
   return (
     <Fragment>
-      <h2>Assets Dashboard</h2>
+      <h2 className="text-center fw-bold text-secondary">Software Licenses</h2>
       {/* <Table dataArray={dataArray} columns={columns} dataTitle="Assets" /> */}
       <AssetsTable />
     </Fragment>

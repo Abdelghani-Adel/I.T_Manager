@@ -31,7 +31,7 @@ const initialState = [
     renewPrice: null,
     maintenancePrice: null,
     licenseKey: "ekutb-8itn2-N9L99-aieJ9-33BNw0",
-    expired: false,
+    expired: true,
   },
   {
     id: "3",
@@ -92,7 +92,8 @@ const softwareSlice = createSlice({
     },
     removeSoftware: (state, action) => {},
     renewSoftware: (state, action) => {
-      const objIndex = state.findIndex((obj) => obj.id === action.payload.id);
+      const objIndex = state.findIndex((obj) => obj.id === action.payload);
+      state[objIndex].expired = false;
     },
   },
 });
