@@ -6,15 +6,22 @@ const AssetsTable = (props) => {
 
   const dataArray = [{}];
   const columns = [
-    { id: 1, title: "name", class: "" },
-    { id: 2, title: "nextRenewal", class: "" },
-    { id: 3, title: "purchasedTo", class: "" },
-    { id: 3, title: "price", class: "" },
+    { id: 1, title: "name", style: "" },
+    { id: 2, title: "nextRenewal", style: "" },
+    { id: 3, title: "purchasedTo", style: "" },
+    { id: 4, title: "price", style: "" },
   ];
   const dataTitle = "Software Assets";
 
+  const basePath = "/assets";
+
   return (
-    <Table dataArray={softwareSlice} columns={columns} dataTitle={dataTitle} />
+    <Table
+      dataArray={softwareSlice}
+      columns={columns}
+      dataTitle={dataTitle}
+      basePath={basePath}
+    />
   );
 };
 
