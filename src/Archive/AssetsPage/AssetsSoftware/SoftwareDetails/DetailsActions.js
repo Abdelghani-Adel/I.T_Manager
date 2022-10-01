@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import Portal from "../../../../Components/UI/Portal";
+import Portal from "../../../../Components/Portal/Portal";
 import { softwareActions } from "../../../../Redux/slices/softwareSlices";
 
 const DetailsActions = (props) => {

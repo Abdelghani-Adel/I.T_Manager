@@ -11,7 +11,7 @@ const NavBar = (props) => {
       <ul className="navbar-nav flex-row flex-lg-column w-100 justify-content-around">
         <NavBarItem path="/dashboard" title="Dashboard" icon="grid" />
         <NavBarItem path="/tickets" title="Tickets" icon="stickies" />
-        <NavBarItem path="/assets" title="Assets" icon="window" />
+        <NavBarItem path="/software" title="Software" icon="window" />
         <NavBarItem path="/inventory" title="Inventory" icon="window" />
         <NavBarItem path="/settings" title="Settings" icon="gear" />
       </ul>

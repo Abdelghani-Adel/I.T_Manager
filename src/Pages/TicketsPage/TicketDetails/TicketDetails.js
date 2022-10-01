@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import Portal from "../../../Components/UI/Portal";
+import Portal from "../../../Components/Portal/Portal";
 import TicketAssignPortal from "./TicketAssignPortal";
 import TicketChat from "./TicketChat/TicketChat";
 import TicketDescription from "./TicketDescription";

@@ -1,15 +1,14 @@
 import { Redirect } from "react-router-dom";
 import DashboardPage from "../Pages/DashboardPage/DashboardPage";
+import SoftwareDashboard from "../Pages/SoftwarePage/SoftwareDashboard/SoftwareDashboard";
+import SoftwareDetails from "../Pages/SoftwarePage/SoftwareDetails/SoftwareDetails";
+import SoftwarePage from "../Pages/SoftwarePage/SoftwarePage";
 import TicketsReport from "../Pages/TicketsPage/components/Report/TicketsReport";
-import TicketDetails from "../Pages/TicketsPage/TicketDetails/TicketDetails";
-import TicketsFilterStatus from "../Pages/TicketsPage/TicketsFilter/TicketsFilterStatus";
-import TicketsDashboard from "../Pages/TicketsPage/TicketsDashboard/TicketsDahboard";
-import TicketsPage from "../Pages/TicketsPage/TicketsPage";
 import NewTicket from "../Pages/TicketsPage/NewTicket/NewTicket";
-import AssetsPage from "../Pages/AssetsPage/AssetsPage";
-import AssetsDashboard from "../Pages/AssetsPage/AssetsDashboard/AssetsDashboard";
-import AssetsSoftware from "../Pages/AssetsPage/AssetsSoftware/AssetsSoftware";
-import SoftwareDetails from "../Pages/AssetsPage/AssetsSoftware/SoftwareDetails/SoftwareDetails";
+import TicketDetails from "../Pages/TicketsPage/TicketDetails/TicketDetails";
+import TicketsDashboard from "../Pages/TicketsPage/TicketsDashboard/TicketsDahboard";
+import TicketsFilterStatus from "../Pages/TicketsPage/TicketsFilter/TicketsFilterStatus";
+import TicketsPage from "../Pages/TicketsPage/TicketsPage";
 
 const ROUTES = [
   {
@@ -38,10 +37,10 @@ const ROUTES = [
         routes: [],
       },
       {
-        path: "/dashboard/assets",
+        path: "/dashboard/software",
         key: "dashboard-tickets",
         exact: true,
-        component: (props) => <AssetsDashboard {...props} />,
+        component: (props) => <SoftwareDashboard {...props} />,
       },
     ],
   },
@@ -90,31 +89,25 @@ const ROUTES = [
     ],
   },
   {
-    path: "/assets",
-    key: "assets-root",
+    path: "/software",
+    key: "software-root",
     exact: false,
-    component: (props) => <AssetsPage {...props} />,
+    component: (props) => <SoftwarePage {...props} />,
     routes: [
       {
-        path: "/assets",
-        key: "assets-page",
+        path: "/software",
+        key: "software-page",
         exact: true,
-        component: () => <Redirect to="/assets/dashboard" />,
+        component: () => <Redirect to="/software/dashboard" />,
       },
       {
-        path: "/assets/dashboard",
-        key: "assets-dashboard",
-        exact: true,
-        component: (props) => <AssetsDashboard {...props} />,
-      },
-      {
-        path: "/assets/software",
+        path: "/software/dashboard",
         key: "assets-software",
         exact: true,
-        component: (props) => <AssetsSoftware {...props} />,
+        component: (props) => <SoftwareDashboard {...props} />,
       },
       {
-        path: "/assets/software/details/:id",
+        path: "/software/details/:id",
         key: "software-singular",
         exact: true,
         component: (props) => <SoftwareDetails {...props} />,

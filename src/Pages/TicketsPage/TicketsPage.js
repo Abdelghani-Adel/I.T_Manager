@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Portal from "../../Components/UI/Portal";
+import Portal from "../../Components/Portal/Portal";
 import ReportPreparation from "./components/Report/ReportPreparation/ReportPreparation";
 import TicketsPageRoutes from "./TicketsRoutes";
 
