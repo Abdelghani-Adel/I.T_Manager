@@ -1,7 +1,10 @@
 import { useState } from "react";
 
 const AddSoftwareLicenseType = (props) => {
-  const { licenseType, setLicenseType } = props;
+  const onChangeHandler = (e) => {
+    const object = { licenseType: e.target.value };
+    props.updateSoftwareObj(object);
+  };
   return (
     <div className="col-md-12">
       <div className="form-check form-switch">
@@ -10,9 +13,9 @@ const AddSoftwareLicenseType = (props) => {
           type="radio"
           name="exampleRadios"
           id="exampleRadios1"
-          value="option1"
-          checked={licenseType === "lifeTimeLicense"}
-          onChange={() => setLicenseType((prev) => "lifeTimeLicense")}
+          value="lifeTime"
+          // checked={licenseType === "lifeTimeLicense"}
+          onChange={onChangeHandler}
         />
         <label className="form-check-label">Life Time License</label>
       </div>
@@ -23,8 +26,8 @@ const AddSoftwareLicenseType = (props) => {
           type="radio"
           name="exampleRadios"
           id="exampleRadios1"
-          value="option1"
-          onClick={() => setLicenseType((prev) => "annualFees")}
+          value="annual"
+          onChange={onChangeHandler}
         />
         <label className="form-check-label">Annal Subscription</label>
       </div>
@@ -35,8 +38,8 @@ const AddSoftwareLicenseType = (props) => {
           type="radio"
           name="exampleRadios"
           id="exampleRadios1"
-          value="option1"
-          onClick={() => setLicenseType((prev) => "monthlyFees")}
+          value="monthly"
+          onChange={onChangeHandler}
         />
         <label className="form-check-label">Monthly Subscription</label>
       </div>

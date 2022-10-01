@@ -7,6 +7,7 @@ const initialState = [
     purchasedOn: "9/23/2022",
     purchasedTo: "Abdelghani Adel",
     website: "https://www.veeam.com/",
+    licenseType: "lifeTimeLicense",
     lifeTimeLicense: false,
     annualFees: true,
     monthlyFees: false,

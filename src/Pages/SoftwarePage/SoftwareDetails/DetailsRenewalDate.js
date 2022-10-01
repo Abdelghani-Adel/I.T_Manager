@@ -6,10 +6,10 @@ const DetailsRenewalDate = (props) => {
   useEffect(() => {
     let purchaseDate = new Date(props.software.purchasedOn);
     let renewalDate;
-    if (props.software.annualFees) {
+    if (props.software.licenseType === "annual") {
       purchaseDate.setFullYear(purchaseDate.getFullYear() + 1);
       renewalDate = purchaseDate.toLocaleDateString();
-    } else if (props.software.monthlyFees) {
+    } else if (props.software.licenseType === "monthly") {
       purchaseDate.setMonth(purchaseDate.getMonth() + 1);
       renewalDate = purchaseDate.toLocaleDateString();
     } else {

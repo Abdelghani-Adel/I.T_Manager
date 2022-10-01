@@ -1,7 +1,9 @@
 const AddSoftwareActions = (props) => {
   return (
     <div className="col-md-4">
-      <button className="btn btn-success ">Add Software</button>
+      <button className="btn btn-success" role="submit">
+        Add Software
+      </button>
     </div>
   );
 };
