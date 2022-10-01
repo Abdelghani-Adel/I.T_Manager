@@ -1,5 +1,6 @@
 import { Redirect } from "react-router-dom";
 import DashboardPage from "../Pages/DashboardPage/DashboardPage";
+import NewSoftware from "../Pages/SoftwarePage/NewSoftware/NewSoftware";
 import SoftwareDashboard from "../Pages/SoftwarePage/SoftwareDashboard/SoftwareDashboard";
 import SoftwareDetails from "../Pages/SoftwarePage/SoftwareDetails/SoftwareDetails";
 import SoftwarePage from "../Pages/SoftwarePage/SoftwarePage";
@@ -111,6 +112,12 @@ const ROUTES = [
         key: "software-singular",
         exact: true,
         component: (props) => <SoftwareDetails {...props} />,
+      },
+      {
+        path: "/software/add",
+        key: "new-software",
+        exact: true,
+        component: (props) => <NewSoftware {...props} />,
       },
     ],
   },
