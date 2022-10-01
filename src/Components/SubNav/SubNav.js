@@ -4,7 +4,7 @@ import classes from "./SubNav.module.css";
 const SubNav = (props) => {
   return (
     <div className="col-12 mb-2">
-      <nav className={`navbar navbar-light border bg-secondary`}>
+      <nav className={`navbar navbar-light border bg-secondary rounded`}>
         <ul className={`navbar-nav ${classes.navbarNav}`}>
           {props.links.map((link) => {
             const splitResult = link.split("/");
